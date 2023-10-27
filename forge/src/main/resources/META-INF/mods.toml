@@ -71,3 +71,5 @@ Modular Bows and Crossbows
    versionRange="[0.3)"
    ordering="NONE"
    side="BOTH"
+[mods.childmods]
+childmodid = { modId = "childmodid", versionRange = "[1.0.0,)" }
