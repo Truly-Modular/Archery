@@ -61,7 +61,7 @@ Modular Bows and Crossbows
    modId="minecraft"
    mandatory=true
    # This version range declares a minimum of the current minecraft version up to but not including the next major version
-   versionRange="[1.20.1,1.21)"
+   versionRange="[1.20,1.20.1,1.21)"
    ordering="NONE"
    side="BOTH"
 [[dependencies.archery]]
@@ -71,5 +71,3 @@ Modular Bows and Crossbows
    versionRange="[0.9,)"
    ordering="NONE"
    side="BOTH"
-[mods.childmods]
-childmodid = { modId = "childmodid", versionRange = "[1.0.0,)" }
