@@ -26,19 +26,7 @@
                     }
                 }
             },
-            "applyPotionEffects": [
-                {
-                    "event": "hurt",
-                    "item": "source.projectile",
-                    "applyTo": "victim",
-                    "duration": 50,
-                    "amplifier": 0,
-                    "effect": "miapi:cryo",
-                    "target_description": {
-                        "translate": "miapi.application_target.description.hurt_victim"
-                    }
-                }
-            ]
+            "cryo": 2
         }
     }
 }
