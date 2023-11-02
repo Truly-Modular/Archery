@@ -26,10 +26,20 @@
 
     "miapi.modular_arrow":"[translation.[material.translation]]Arrow",
 
-    "miapi.module.bow_handle_normal": "Bow Handle",
+    "miapi.module.bow_handle_normal": "Arrow Rest",
     "miapi.module.bow_handle_normal.name": "[translation.[material.translation]]Bow Parts",
-    "miapi.module.bow_handle_normal.description": "The Handle of a Bow.",
-    "miapi.module.bow_handle_normal.short_description": "The Handle of a Bow.",
+    "miapi.module.bow_handle_normal.description": "An Arrow Rest for the Bow.",
+    "miapi.module.bow_handle_normal.short_description": "An Arrow Rest for the Bow.",
+
+    "miapi.module.bow_handle_sniper": "Precision Arrow Rest",
+    "miapi.module.bow_handle_sniper.name": "[translation.[material.translation]]Bow Parts",
+    "miapi.module.bow_handle_sniper.description": "Increases the arrow-precision at the cost of drawtime.",
+    "miapi.module.bow_handle_sniper.short_description": "Increases the arrow-precision at the cost of drawtime.",
+
+    "miapi.module.bow_handle_arrow_holder": "Full capture arrow rest",
+    "miapi.module.bow_handle_arrow_holder.name": "[translation.[material.translation]]Bow Parts",
+    "miapi.module.bow_handle_arrow_holder.description": "Increased movement speed while drawing at the cost of accuracy.",
+    "miapi.module.bow_handle_arrow_holder.short_description": "Increased movement speed while drawing at the cost of accuracy.",
 
     "miapi.module.bow_arms_normal": "Bow Arms",
     "miapi.module.bow_arms_normal.name": "[translation.[material.translation]]Bow",

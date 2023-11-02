@@ -1,5 +1,5 @@
 {
-    "name": "bow_handle_normal",
+    "name": "bow_handle_arrow_holder",
     "texture": {
         "path": "miapi:models/item/bow/handle/normal/[material.texture].json",
         "transform": {
@@ -54,20 +54,6 @@
             }
         }
     },
-    "attributes": [
-        {
-            "attribute": "miapi:generic.projectile_speed",
-            "value": "-([material.density]-1.7)/6",
-            "operation": "+",
-            "slot": "mainhand"
-        },
-        {
-            "attribute": "miapi:generic.projectile_accuracy",
-            "value": "([material.hardness]-3.0)/10",
-            "operation": "+",
-            "slot": "mainhand"
-        }
-    ],
     "modelTransform": {
         "replace": {
             "fixed": {
@@ -155,6 +141,7 @@
                     "z": 0.68
                 }
             }
+
         }
     },
     "enchantments": {
@@ -176,6 +163,6 @@
         ],
         "cost": 1
     },
-    "displayName": "miapi.module.bow_handle_normal.name",
+    "displayName": "miapi.module.bow_handle_arrow_holder.name",
     "itemId": "miapi:modular_bow_part"
 }
