@@ -57,7 +57,7 @@
     "attributes": [
         {
             "attribute": "miapi:generic.projectile_speed",
-            "value": "-([material.density]-1.7)/6",
+            "value": "-([material.flexibility]-3.0)/6",
             "operation": "+",
             "slot": "mainhand"
         },

@@ -27,7 +27,7 @@
         "crossbow"
     ],
     "allowedInSlots": [
-        "bow"
+        "crossbow"
     ],
     "durability": "[material.durability]* 0.5",
     "slots": {

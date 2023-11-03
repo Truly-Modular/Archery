@@ -29,14 +29,20 @@
     "attributes": [
         {
             "attribute": "miapi:generic.projectile_speed",
-            "value": "-([material.density]-3)/6",
+            "value": "-([material.flexibility]-3.0)/6",
             "operation": "+",
             "slot": "mainhand"
         },
         {
             "attribute": "miapi:generic.projectile_accuracy",
-            "value": "([material.hardness]-1.7)/10",
+            "value": "([material.hardness]-3.0)",
             "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.bow_draw_time",
+            "value": "-0.1",
+            "operation": "*",
             "slot": "mainhand"
         }
     ],
@@ -155,7 +161,6 @@
                     "z": 0.68
                 }
             }
-
         }
     },
     "enchantments": {
