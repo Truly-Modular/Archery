@@ -35,7 +35,7 @@
         },
         {
             "attribute": "miapi:generic.player_item_use_speed",
-            "value": "([material.density])/10",
+            "value": "([material.hardness]+1.0) / 15 +0.1",
             "operation": "+",
             "slot": "mainhand"
         }
