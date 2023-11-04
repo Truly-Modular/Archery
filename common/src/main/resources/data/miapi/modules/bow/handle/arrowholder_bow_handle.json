@@ -20,6 +20,26 @@
             }
         }
     },
+    "attributes": [
+        {
+            "attribute": "miapi:generic.projectile_speed",
+            "value": "-([material.flexibility]-3.0)/6",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.projectile_accuracy",
+            "value": "([material.hardness]-3.0)/10",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.player_item_use_speed",
+            "value": "([material.density])/10",
+            "operation": "+",
+            "slot": "mainhand"
+        }
+    ],
     "repairPriority": 0,
     "materialProperty": [
         "default",
@@ -141,7 +161,6 @@
                     "z": 0.68
                 }
             }
-
         }
     },
     "enchantments": {
