@@ -23,13 +23,13 @@
     "attributes": [
         {
             "attribute": "miapi:generic.projectile_speed",
-            "value": "-([material.flexibility]-3.0)/6",
+            "value": "-([material.flexibility])/6",
             "operation": "+",
             "slot": "mainhand"
         },
         {
             "attribute": "miapi:generic.projectile_accuracy",
-            "value": "([material.hardness]-3.0)/10",
+            "value": "-([material.hardness])/10",
             "operation": "+",
             "slot": "mainhand"
         },

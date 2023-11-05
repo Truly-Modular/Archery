@@ -7,6 +7,8 @@ pluginManagement {
     }
 }
 
+rootProject.name = 'archery'
+
 include("common")
 include("fabric")
 include("forge")

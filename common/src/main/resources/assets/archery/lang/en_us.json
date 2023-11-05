@@ -38,8 +38,8 @@
 
     "miapi.module.bow_handle_arrow_holder": "Full-Capture Arrow Rest",
     "miapi.module.bow_handle_arrow_holder.name": "[translation.[material.translation]]Bow Parts",
-    "miapi.module.bow_handle_arrow_holder.description": "Increased movement speed while drawing at the cost of accuracy.",
-    "miapi.module.bow_handle_arrow_holder.short_description": "Increased movement speed while drawing at the cost of accuracy.",
+    "miapi.module.bow_handle_arrow_holder.description": "Fully secures the arrow allowing for faster moving while drawing\nAt the cost of arrow speed and accuracy.",
+    "miapi.module.bow_handle_arrow_holder.short_description": "Fully secures the arrow allowing for faster moving while drawing\nAt the cost of arrow speed and accuracy.",
 
     "miapi.module.bow_arms_normal": "Bow Arms",
     "miapi.module.bow_arms_normal.name": "[translation.[material.translation]]Bow",
