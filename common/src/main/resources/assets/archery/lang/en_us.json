@@ -36,7 +36,7 @@
     "miapi.module.bow_handle_sniper.description": "Increases the arrow-precision at the cost of drawtime.",
     "miapi.module.bow_handle_sniper.short_description": "Increases the arrow-precision at the cost of drawtime.",
 
-    "miapi.module.bow_handle_arrow_holder": "Full capture arrow rest",
+    "miapi.module.bow_handle_arrow_holder": "Full-Capture Arrow Rest",
     "miapi.module.bow_handle_arrow_holder.name": "[translation.[material.translation]]Bow Parts",
     "miapi.module.bow_handle_arrow_holder.description": "Increased movement speed while drawing at the cost of accuracy.",
     "miapi.module.bow_handle_arrow_holder.short_description": "Increased movement speed while drawing at the cost of accuracy.",
