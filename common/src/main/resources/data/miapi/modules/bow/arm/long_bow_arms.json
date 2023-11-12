@@ -58,6 +58,9 @@
             }
         }
     },
+    "better_combat_config": {
+        "parent": "bettercombat:bow_two_handed_heavy"
+    },
     "attributes": [
         {
             "attribute": "miapi:generic.projectile_speed",
@@ -73,7 +76,7 @@
         },
         {
             "attribute": "miapi:generic.projectile_accuracy",
-            "value": "-0.3",
+            "value": "-0.1",
             "operation": "+",
             "slot": "mainhand"
         }

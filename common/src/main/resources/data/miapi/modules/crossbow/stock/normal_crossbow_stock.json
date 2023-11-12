@@ -26,6 +26,9 @@
         "handheld",
         "crossbow"
     ],
+    "better_combat_config": {
+        "parent": "bettercombat:crossbow_two_handed_light"
+    },
     "allowedInSlots": [
         "crossbow"
     ],
