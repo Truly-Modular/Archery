@@ -38,6 +38,7 @@
             "allowed": [
                 "crossbow_arm"
             ],
+            "translationKey": "miapi.slot.crossbow_stave.name",
             "transform": {
                 "rotation": {
                     "x": 0.0,

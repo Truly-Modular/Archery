@@ -39,6 +39,7 @@
             "allowed": [
                 "crossbow_string"
             ],
+            "translationKey": "miapi.slot.crossbow_string.name",
             "transform": {
                 "rotation": {
                     "x": 0.0,

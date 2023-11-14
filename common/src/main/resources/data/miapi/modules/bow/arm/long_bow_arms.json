@@ -39,6 +39,7 @@
             "allowed": [
                 "bow_string"
             ],
+            "translationKey": "miapi.slot.bow_string.name",
             "transform": {
                 "rotation": {
                     "x": 0.0,

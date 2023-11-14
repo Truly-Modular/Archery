@@ -184,6 +184,7 @@
             "allowed": [
                 "arrow_head"
             ],
+            "translationKey": "miapi.slot.arrow_head.name",
             "transform": {
                 "rotation": {
                     "x": 0.0,
@@ -206,6 +207,7 @@
             "allowed": [
                 "arrow_tail"
             ],
+            "translationKey": "miapi.slot.arrow_tail.name",
             "transform": {
                 "rotation": {
                     "x": 0.0,

@@ -55,6 +55,7 @@
             "allowed": [
                 "bow_arm"
             ],
+            "translationKey": "miapi.slot.bow_stave.name",
             "transform": {
                 "rotation": {
                     "x": 0.0,

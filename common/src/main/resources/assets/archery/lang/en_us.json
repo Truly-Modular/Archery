@@ -1,4 +1,14 @@
 {
+    "miapi.slot.bow_string.name": "Empty String Slot",
+    "miapi.slot.bow_stave.name": "Empty Stave Slot",
+
+    "miapi.slot.arrow_tail.name": "Empty Arrow Fletching Slot",
+    "miapi.slot.arrow_head.name": "Empty Arrow Head Slot",
+
+    "miapi.slot.crossbow_stave.name": "Empty Crossbow Stave Slot",
+    "miapi.slot.crossbow_front_attachment.name": "Empty Front Attachment Slot",
+    "miapi.slot.crossbow_string.name": "Empty String Slot",
+
     "miapi.module.arrow_head_normal": "Arrow Head",
     "miapi.module.arrow_head_normal.name": "[translation.[material.translation]]Arrow Head",
     "miapi.module.arrow_head_normal.description": "The Front piece of an arrow, determins how an Arrow Impacts a Target.",
