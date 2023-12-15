@@ -4,7 +4,7 @@
             "type": "material",
             "material": "ice"
         },
-        "properties": {
+        "replace": {
             "texture": {
                 "path": "miapi:models/item/arrow/head/normal/ice.json",
                 "color_provider": "model",

@@ -4,7 +4,7 @@
             "type": "material",
             "material": "chorus_fruit"
         },
-        "properties": {
+        "replace": {
             "teleport_target": true,
             "texture": {
                 "path": "miapi:models/item/arrow/head/normal/chorus_fruit.json",

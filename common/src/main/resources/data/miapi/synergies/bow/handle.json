@@ -7,7 +7,7 @@
                 "tag": "string_long"
             }
         },
-        "properties": {
+        "replace": {
             "texture": {
                 "path": "miapi:models/item/bow/handle/long/[material.texture].json",
                 "transform": {

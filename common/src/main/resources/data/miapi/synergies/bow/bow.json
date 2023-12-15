@@ -11,7 +11,7 @@
                 }
             }
         },
-        "properties": {
+        "replace": {
             "displayName": "miapi.module.bow_handle_normal.name",
             "itemId": "miapi:modular_bow_part"
         }

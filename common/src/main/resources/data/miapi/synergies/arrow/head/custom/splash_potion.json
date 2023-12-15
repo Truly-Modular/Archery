@@ -4,7 +4,7 @@
             "type": "material",
             "material": "splash_potion"
         },
-        "properties": {
+        "replace": {
             "inscribe_on_craft": "POTION",
             "replace_projectile": "POTION",
             "texture": [

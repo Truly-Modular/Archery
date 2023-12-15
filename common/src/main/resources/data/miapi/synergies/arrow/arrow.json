@@ -8,7 +8,7 @@
                 "tag": "arrow_tail"
             }
         },
-        "properties": {
+        "replace": {
             "displayName": "miapi.modular_arrow",
             "itemId": "miapi:modular_arrow"
         }

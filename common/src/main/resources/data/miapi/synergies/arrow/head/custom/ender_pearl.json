@@ -4,7 +4,7 @@
             "type": "material",
             "material": "ender_pearl"
         },
-        "properties": {
+        "replace": {
             "is_enderpearl": true,
             "texture": {
                 "path": "miapi:models/item/arrow/head/normal/ender_pearl.json",

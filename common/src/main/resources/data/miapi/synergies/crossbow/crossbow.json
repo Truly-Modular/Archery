@@ -7,7 +7,7 @@
                 "tag": "crossbow_string"
             }
         },
-        "properties": {
+        "replace": {
             "displayName": "miapi.module.crossbow.name",
             "itemId": "miapi:modular_crossbow"
         }

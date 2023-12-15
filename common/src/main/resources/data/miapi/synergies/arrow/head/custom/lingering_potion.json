@@ -4,7 +4,7 @@
             "type": "material",
             "material": "lingering_potion"
         },
-        "properties": {
+        "replace": {
             "inscribe_on_craft": "POTION",
             "replace_projectile": "POTION",
             "texture": [

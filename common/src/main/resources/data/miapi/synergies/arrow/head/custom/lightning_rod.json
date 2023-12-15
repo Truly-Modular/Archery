@@ -4,7 +4,7 @@
             "type": "material",
             "material": "lightning_rod"
         },
-        "properties": {
+        "replace": {
             "channeling": true,
             "texture": {
                 "path": "miapi:models/item/arrow/head/normal/lightning_rod.json",

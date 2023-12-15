@@ -4,7 +4,7 @@
             "type": "material",
             "material": "tnt"
         },
-        "properties": {
+        "replace": {
             "explosion_projectile": {
                 "destroyBlocks": true,
                 "strength": 3.0,
