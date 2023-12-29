@@ -30,15 +30,6 @@ configurations {
     developmentForge.extendsFrom common
 }
 
-tasks.register('githubPublish') {
-    finalizedBy ':common:publish'
-    group = 'publishing'
-
-    doLast {
-        publishing.publications.mavenCommon.groupId = "com.${rootProject.github}"
-    }
-}
-
 dependencies {
     forge "net.minecraftforge:forge:${rootProject.forge_version}"
     // Remove the next line if you don't want to depend on the API
@@ -85,6 +76,15 @@ sourcesJar {
 components.java {
     withVariantsFromConfiguration(project.configurations.shadowRuntimeElements) {
         skip()
+    }
+}
+
+tasks.register('githubPublish') {
+    finalizedBy ':forge:publish'
+    group = 'publishing'
+
+    doLast {
+        publishing.publications.mavenForge.groupId = "com.${rootProject.github}"
     }
 }
 
