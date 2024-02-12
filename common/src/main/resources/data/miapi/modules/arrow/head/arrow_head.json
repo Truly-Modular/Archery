@@ -45,10 +45,11 @@
             "slot": "mainhand"
         },
         {
-            "attribute": "miapi:generic.projectile_crit_multiplier",
+            "attribute": "miapi:generic.crit_damage",
             "value": "([material.hardness] / (3.7) - 1)*0.25",
-            "operation": "+",
-            "slot": "mainhand"
+            "operation": "*",
+            "slot": "mainhand",
+            "target_operation": "*"
         }
     ],
     "allowedMaterial": {

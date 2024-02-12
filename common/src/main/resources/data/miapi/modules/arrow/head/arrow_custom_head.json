@@ -21,10 +21,11 @@
             "slot": "mainhand"
         },
         {
-            "attribute": "miapi:generic.projectile_crit_multiplier",
+            "attribute": "miapi:generic.crit_damage",
             "value": "-0.5",
-            "operation": "+",
-            "slot": "mainhand"
+            "operation": "*",
+            "slot": "mainhand",
+            "target_operation": "*"
         }
     ],
     "allowedMaterial": {
