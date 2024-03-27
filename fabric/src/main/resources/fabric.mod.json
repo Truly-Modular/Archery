@@ -1,16 +1,22 @@
 {
   "schemaVersion": 1,
-  "id": "archery",
+  "id": "${mod_id}",
   "version": "${version}",
-
-  "name": "Archery",
-  "description": "Modular Bows and Crossbows",
-  "authors": [],
-  "contact": {},
-
+  "name": "${mod_name}",
+  "description": "${mod_description}",
+  "authors": [
+    "${mod_author}"
+  ],
+  "contributors": [
+    "${credits}"
+  ],
+  "contact": {
+    "homepage": "https://github.com/${github}",
+    "issues": "https://github.com/${github}/issues",
+    "sources": "https://github.com/${github}"
+  },
   "license": "CC-BY-NC-4.0",
   "icon": "icon.png",
-
   "environment": "*",
   "entrypoints": {},
   "mixins": [
@@ -18,13 +24,10 @@
     "archery-common.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.14.21",
-    "minecraft": [
-      ">=1.20",
-      "1.20",
-      "1.20.1"
-    ],
-    "miapi": ">=1.0.7"
+    "fabricloader": ">=${fabric_loader_version}",
+    "fabric-api": ">=${fabric_api_version}",
+    "minecraft": "${minecraft_version}",
+    "miapi": ">=${miapi_version}"
   },
   "custom": {
     "modmenu": {
