@@ -1,4 +1,14 @@
 {
+    "miapi.slot.bow_string.name": "空弦槽",
+    "miapi.slot.bow_stave.name": "空弓杆槽",
+
+    "miapi.slot.arrow_tail.name": "空箭羽槽",
+    "miapi.slot.arrow_head.name": "空箭头槽",
+
+    "miapi.slot.crossbow_stave.name": "空弩杆槽",
+    "miapi.slot.crossbow_front_attachment.name": "空前置附件槽",
+    "miapi.slot.crossbow_string.name": "空弦槽",
+
     "miapi.module.arrow_head_normal": "箭头",
     "miapi.module.arrow_head_normal.name": "[translation.[material.translation]]箭头",
     "miapi.module.arrow_head_normal.description": "箭的头部决定了箭如何影响目标。",
