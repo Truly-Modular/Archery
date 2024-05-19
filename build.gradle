@@ -30,19 +30,19 @@ forgix {
 }
 
 tasks.register('clean-builds') {
-    dependsOn(':forge:clean',':fabric:clean')
+    dependsOn(':archery-forge:clean',':archery-fabric:clean')
     doLast {
         println "Cleaned previous build"
     }
 }
 
 tasks.register('buildBoth') {
-    dependsOn('clean-builds', ':fabric:build', ':forge:build')
+    dependsOn('clean-builds', ':archery-fabric:build', ':archery-forge:build')
     doLast {
         def modVersion = rootProject.mod_version
         def minecraftVersion = rootProject.minecraft_version
-        def fabricBuildDir = project(':fabric').file('build/libs')
-        def forgeBuildDir = project(':forge').file('build/libs')
+        def fabricBuildDir = project(':archery-fabric').file('build/libs')
+        def forgeBuildDir = project(':archery-forge').file('build/libs')
         def fabricJar = fabricBuildDir.listFiles().find { it.name.endsWith("${modVersion}.jar") }
         def forgeJar = forgeBuildDir.listFiles().find { it.name.endsWith("${modVersion}.jar") }
 

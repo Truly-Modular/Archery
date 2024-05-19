@@ -5,7 +5,7 @@ dependencies {
     // Remove the next line if you don't want to depend on the API
     modApi "dev.architectury:architectury:${rootProject.architectury_version}"
 
-    modApi ("maven.modrinth:modular-item-api:${rootProject.miapi_version}-${rootProject.minecraft_version}-fabric")
+    modApi("maven.modrinth:modular-item-api:${rootProject.miapi_version}-${rootProject.minecraft_version}-fabric")
     implementation('org.mariuszgromada.math:MathParser.org-mXparser:4.4.2')
     modApi("com.github.RedPxnda.Nucleus:nucleus:${rootProject.nucleus_version}")
 }
@@ -27,11 +27,11 @@ repositories {
 }
 
 architectury {
-    common()
+    common('fabric', 'forge')
 }
 
 tasks.register('githubPublish') {
-    finalizedBy ':common:publish'
+    finalizedBy ':archery-common:publish'
     group = 'publishing'
 
     doLast {
