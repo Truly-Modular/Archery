@@ -1,4 +1,12 @@
 {
+
+    "miapi.skin.name.pride-bow_arm_1":"RainbowBow",
+    "miapi.skin.name.pride-bow_arm_2":"Colorfull Arrowspitter",
+    "miapi.skin.name.pride-bow_arm_3":"Prismatic Bow",
+    "miapi.skin.name.pride-crossbow_arm_1":"RainCrossbowBow",
+    "miapi.skin.name.pride-crossbow_arm_2":"Colorfull Arrowspitter",
+    "miapi.skin.name.pride-crossbow_arm_3":"Prismatic Crossbow",
+
     "miapi.slot.bow_string.name": "Empty String Slot",
     "miapi.slot.bow_stave.name": "Empty Stave Slot",
 
@@ -80,6 +88,10 @@
     "miapi.module.crossbow_stock_normal.name": "[translation.[material.translation]]Crossbow Stock",
     "miapi.module.crossbow_stock_normal.description": "The grip and shoulder support, essential for accurate aiming and comfortable handling",
     "miapi.module.crossbow_stock_normal.short_description": "The grip and shoulder support, essential for accurate aiming and comfortable handling",
+
+    "miapi.module.crossbow_stock_magazine": "Magazine Crossbow Stock",
+    "miapi.module.crossbow_stock_magazine.name": "[translation.[material.translation]]Crossbow Stock",
+    "miapi.module.crossbow_stock_magazine.description": "An advanced Crossbow stock allowing to load multiple shots and shoot loaded shots rapidly",
 
     "miapi.module.crossbow_arms_normal": "Crossbow Stave",
     "miapi.module.crossbow_arms_normal.name": "[translation.[material.translation]]Stave",
