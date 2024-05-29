@@ -1,11 +1,16 @@
 {
 
-    "miapi.skin.name.pride-bow_arm_1":"RainbowBow",
-    "miapi.skin.name.pride-bow_arm_2":"Colorfull Arrowspitter",
-    "miapi.skin.name.pride-bow_arm_3":"Prismatic Bow",
-    "miapi.skin.name.pride-crossbow_arm_1":"RainCrossbowBow",
-    "miapi.skin.name.pride-crossbow_arm_2":"Colorfull Arrowspitter",
-    "miapi.skin.name.pride-crossbow_arm_3":"Prismatic Crossbow",
+    "miapi.skin.name.pride-bow_arm_1": "RainbowBow",
+    "miapi.skin.name.pride-bow_arm_2": "Colorful Arrowspitter",
+    "miapi.skin.name.pride-bow_arm_3": "Prismatic Bow",
+    "miapi.skin.name.pride-bow_arm_4": "Spectrum Striker",
+    "miapi.skin.name.pride-bow_arm_5": "Aurora Archer",
+
+    "miapi.skin.name.pride-crossbow_arm_1": "Chromatic Quarrel",
+    "miapi.skin.name.pride-crossbow_arm_2": "Rainbow Reloader",
+    "miapi.skin.name.pride-crossbow_arm_3": "Prismatic Piercer",
+    "miapi.skin.name.pride-crossbow_arm_4": "Radiant Repeater",
+    "miapi.skin.name.pride-crossbow_arm_5": "Spectrum Shot",
 
     "miapi.slot.bow_string.name": "Empty String Slot",
     "miapi.slot.bow_stave.name": "Empty Stave Slot",
