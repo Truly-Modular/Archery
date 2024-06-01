@@ -3,26 +3,6 @@ plugins {
     id "dev.architectury.loom" version "1.6.397" apply false
 }
 
-architectury {
-    minecraft = rootProject.minecraft_version
-}
-
-repositories {
-    maven { url 'https://maven.kosmx.dev/' }
-    maven { url 'https://maven.shedaniel.me/' }
-    maven { url 'https://maven.fabricmc.net/' }
-    maven { url 'https://jitpack.io' }
-    maven { url 'https://maven.terraformersmc.com/' }
-    maven { url 'https://www.cursemaven.com' }
-    maven {
-        name = 'Modrinth'
-        url = 'https://api.modrinth.com/maven'
-        content {
-            includeGroup 'maven.modrinth'
-        }
-    }
-}
-
 tasks.register('clean-builds') {
     dependsOn(':archery-forge:clean',':archery-fabric:clean')
     doLast {
