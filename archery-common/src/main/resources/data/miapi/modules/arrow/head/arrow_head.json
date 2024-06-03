@@ -2,6 +2,7 @@
     "name": "arrow_head_normal",
     "texture": {
         "path": "miapi:models/item/arrow/head/normal/[material.texture].json",
+        "id": "aligned",
         "transform": {
             "rotation": {
                 "x": 0.0,
@@ -9,8 +10,8 @@
                 "z": 0.0
             },
             "translation": {
-                "x": 0.0,
-                "y": 0.0,
+                "x": -4.0,
+                "y": -4.0,
                 "z": 0.0
             },
             "scale": {

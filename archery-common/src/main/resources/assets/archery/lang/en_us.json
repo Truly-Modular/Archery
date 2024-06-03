@@ -24,6 +24,18 @@
     "miapi.skin.name.pride-crossbow_arm_nb": "Non-Binary Bolt",
     "miapi.skin.name.pride-crossbow_arm_trans": "Trans Crossbow",
 
+    "miapi.skin.name.pride-arrow_shaft_1": "Rainbow Flight",
+    "miapi.skin.name.pride-arrow_shaft_2": "Chromatic Dart",
+    "miapi.skin.name.pride-arrow_shaft_3": "Prismatic Piercer",
+    "miapi.skin.name.pride-arrow_shaft_4": "Spectrum Quill",
+    "miapi.skin.name.pride-arrow_shaft_5": "Aurora Feather",
+    "miapi.skin.name.pride-arrow_shaft_ace": "Ace Arrow",
+    "miapi.skin.name.pride-arrow_shaft_bi": "Bi Bolt",
+    "miapi.skin.name.pride-arrow_shaft_gay": "Gleaming Arrow",
+    "miapi.skin.name.pride-arrow_shaft_lesbian": "Lesbian Lightbolt",
+    "miapi.skin.name.pride-arrow_shaft_nb": "Enby Dart",
+    "miapi.skin.name.pride-arrow_shaft_trans": "Trans Arrow",
+
     "miapi.slot.bow_string.name": "Empty String Slot",
     "miapi.slot.bow_stave.name": "Empty Stave Slot",
 
@@ -115,10 +127,33 @@
     "miapi.module.crossbow_arms_normal.description": "The sturdy core frame of a crossbow, providing the structure and stability for firing bolts.",
     "miapi.module.crossbow_arms_normal.short_description": "The sturdy core frame of a crossbow, providing the structure and stability for firing bolts.",
 
+    "miapi.module.crossbow_arms_short": "Short Crossbow Stave",
+    "miapi.module.crossbow_arms_short.name": "[translation.[material.translation]]Stave",
+    "miapi.module.crossbow_arms_short.description": "A short stave perfect for quick shots but lacks power.",
+
+
+    "miapi.module.crossbow_arms_large": "Large Crossbow Stave",
+    "miapi.module.crossbow_arms_large.name": "[translation.[material.translation]]Stave",
+    "miapi.module.crossbow_arms_large.description": "A Large Stave allowing for powerfull shots but require a long reload between shots.",
+
+
     "miapi.module.crossbow_string_normal": "Crossbow String",
     "miapi.module.crossbow_string_normal.name": "[translation.[material.translation]]Crossbow String",
     "miapi.module.crossbow_string_normal.description": "The high-tension element that launches bolts with force and precision.",
     "miapi.module.crossbow_string_normal.short_description": "The high-tension element that launches bolts with force and precision.",
+
+    "miapi.module.crossbow_attachments_magazine": "Magazine Attachments",
+    "miapi.module.crossbow_attachments_magazine.description": "Allows to quickly shot multiple shots in quick succesion.",
+
+    "miapi.module.crossbow_attachments_quickloader": "Quickload Attachments",
+    "miapi.module.crossbow_attachments_quickloader.description": "Quickloader halfs the time between magazine shots.",
+
+    "miapi.module.crossbow_attachments_sights": "Sights",
+    "miapi.module.crossbow_attachments_sights.description": "Increases Accuracy of your shots.",
+
+    "miapi.module.crossbow_attachments_styrup": "Stirrup",
+    "miapi.module.crossbow_attachments_styrup.description": "Decreases reload time significantly",
+
 
     "miapi.module.crossbow.name": "[translation.[material.translation]]Crossbow"
 }

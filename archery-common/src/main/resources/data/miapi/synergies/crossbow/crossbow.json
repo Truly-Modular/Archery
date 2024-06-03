@@ -1,5 +1,6 @@
 {
-    "crossbow_arms_normal": {
+    "type": "tag",
+    "crossbow_arms": {
         "condition": {
             "type": "otherModule",
             "condition": {

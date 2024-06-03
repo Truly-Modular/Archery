@@ -21,6 +21,7 @@
         }
     },
     "repairPriority": 0,
+    "priority": 2,
     "materialProperty": [
         "default",
         "handheld",
@@ -34,7 +35,7 @@
     ],
     "durability": "[material.durability]* 0.5",
     "rapid_fire_crossbow": "1 + [material.hardness] / 4 + [material.mining_level] / 3",
-    "rapid_fire_crossbow_delay": "20",
+    "rapid_fire_crossbow_delay": "16",
     "attributes": [
         {
             "attribute": "miapi:generic.projectile_speed",
@@ -84,8 +85,35 @@
                     "z": 1.04
                 }
             }
+        },
+        "-1": {
+            "allowed": [
+                "crossbow-attachments"
+            ],
+            "translationKey": "miapi.slot.crossbow_attachment.name",
+            "transform": {
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "translation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            }
         }
     },
+    "tag": [
+        "crossbow_stock",
+        "crossbow_stock_magazine"
+    ],
     "modelTransform": {
         "replace": {
             "thirdperson_righthand": {

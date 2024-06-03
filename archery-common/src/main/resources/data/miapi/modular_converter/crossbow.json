@@ -19,6 +19,14 @@
                         "subModules": {}
                     }
                 }
+            },
+            "-1": {
+                "module": "crossbow_attachments_styrup",
+                "moduleData": {
+                    "properties": "{\"material\":\"iron\"}"
+                },
+                "subModules": {
+                }
             }
         }
     }

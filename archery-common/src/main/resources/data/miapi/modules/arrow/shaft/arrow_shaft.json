@@ -2,6 +2,7 @@
     "name": "arrow_shaft_normal",
     "texture": {
         "path": "miapi:models/item/arrow/shaft/normal/[material.texture].json",
+        "id": "aligned",
         "transform": {
             "rotation": {
                 "x": 0.0,
@@ -25,6 +26,9 @@
         "arrow"
     ],
     "allowedInSlots": [
+        "arrow_shaft"
+    ],
+    "tag": [
         "arrow_shaft"
     ],
     "is_arrow": true,
