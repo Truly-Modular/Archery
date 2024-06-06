@@ -46,7 +46,7 @@
     "attributes": [
         {
             "attribute": "miapi:generic.bow_draw_time",
-            "value": "[material.hardness] * 2",
+            "value": "[material.hardness] * 0.5 + 7.5",
             "operation": "+",
             "slot": "mainhand"
         }

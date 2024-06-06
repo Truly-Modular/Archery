@@ -75,7 +75,7 @@
         },
         {
             "attribute": "miapi:generic.projectile_accuracy",
-            "value": "+([material.hardness])/10",
+            "value": "+([material.hardness])/10 + 10",
             "operation": "+",
             "slot": "mainhand"
         }

@@ -69,7 +69,7 @@
         },
         {
             "attribute": "miapi:generic.bow_draw_time",
-            "value": "-([material.hardness]/4 - 1) * 10",
+            "value": "-([material.hardness]/4 - 1) * 10 + 10",
             "operation": "+",
             "slot": "mainhand"
         },
