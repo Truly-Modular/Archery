@@ -21,7 +21,7 @@
         }
     },
     "priority": 2,
-    "repairPriority": 1,
+    "repairPriority": -1,
     "materialProperty": [
         "default",
         "handheld",
