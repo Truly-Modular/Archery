@@ -54,7 +54,7 @@
         },
         {
             "attribute": "miapi:generic.projectile_damage",
-            "value": "[material.hardness]/3 - 1 ",
+            "value": "sqrt([material.hardness]/3) - 1",
             "operation": "+",
             "slot": "mainhand"
         },

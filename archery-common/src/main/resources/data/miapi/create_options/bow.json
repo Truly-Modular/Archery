@@ -1,4 +1,5 @@
 {
     "module": "bow_handle_normal",
-    "translation": "miapi.create_item.bow"
+    "translation": "miapi.create_item.bow",
+    "priority":-11
 }
