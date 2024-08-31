@@ -62,7 +62,7 @@
             "allowed": [
                 "crossbow-attachments"
             ],
-            "translationKey": "miapi.slot.crossbow_attachment.name",
+            "translationKey": "miapi.slot.crossbow_front_attachment.name",
             "transform": {
                 "rotation": {
                     "x": 0.0,
