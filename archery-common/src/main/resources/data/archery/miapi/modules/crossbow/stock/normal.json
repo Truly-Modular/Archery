@@ -33,6 +33,7 @@
         "crossbow"
     ],
     "durability": "[material.durability]* 0.5",
+    "rapid_fire_crossbow_delay": "12",
     "slots": {
         "arms": {
             "allowed": [

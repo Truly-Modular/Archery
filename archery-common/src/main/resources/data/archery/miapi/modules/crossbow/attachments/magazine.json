@@ -43,5 +43,5 @@
         ],
         "cost": 1
     },
-    "rapid_fire_crossbow": "1 + [material.mining_level]"
+    "rapid_fire_crossbow": "1 + [material.flexibility]/3"
 }

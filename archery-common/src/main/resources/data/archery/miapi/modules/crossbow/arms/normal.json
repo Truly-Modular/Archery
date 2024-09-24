@@ -67,7 +67,7 @@
         },
         {
             "attribute": "miapi:generic.draw_time",
-            "value": "-([material.hardness]/3 - 1) * 12 + 10",
+            "value": "(29 +[material.hardness]*2)/20",
             "operation": "+",
             "slot": "mainhand"
         }
@@ -82,5 +82,7 @@
             "netherite"
         ],
         "cost": 2
-    }
+    },
+    "display_name": "miapi.module.archery.crossbow.arms.normal.name",
+    "item_id": "miapi:modular_crossbow"
 }

@@ -122,19 +122,19 @@
     "miapi.module.archery.crossbow.stock.magazine.name": "%s Crossbow Stock",
     "miapi.module.archery.crossbow.stock.magazine.description": "An advanced Crossbow stock allowing to load multiple shots and shoot loaded shots rapidly",
 
-    "miapi.module.archery.crossbow.arm.normal": "Crossbow Stave",
-    "miapi.module.archery.crossbow.arm.normal.name": "%s Stave",
-    "miapi.module.archery.crossbow.arm.normal.description": "The sturdy core frame of a crossbow, providing the structure and stability for firing bolts.",
-    "miapi.module.archery.crossbow.arm.normal.short_description": "The sturdy core frame of a crossbow, providing the structure and stability for firing bolts.",
+    "miapi.module.archery.crossbow.arms.normal": "Crossbow Stave",
+    "miapi.module.archery.crossbow.arms.normal.name": "%s Crossbow",
+    "miapi.module.archery.crossbow.arms.normal.description": "The sturdy core frame of a crossbow, providing the structure and stability for firing bolts.",
+    "miapi.module.archery.crossbow.arms.normal.short_description": "The sturdy core frame of a crossbow, providing the structure and stability for firing bolts.",
 
-    "miapi.module.archery.crossbow.arm.short": "Short Crossbow Stave",
-    "miapi.module.archery.crossbow.arm.short.name": "%s Stave",
-    "miapi.module.archery.crossbow.arm.short.description": "A short stave perfect for quick shots but lacks power.",
+    "miapi.module.archery.crossbow.arms.short": "Short Crossbow Stave",
+    "miapi.module.archery.crossbow.arms.short.name": "Short %s Crossbow",
+    "miapi.module.archery.crossbow.arms.short.description": "A short stave perfect for quick shots but lacks power.",
 
 
-    "miapi.module.archery.crossbow.arm.large": "Large Crossbow Stave",
-    "miapi.module.archery.crossbow.arm.large.name": "%s Stave",
-    "miapi.module.archery.crossbow.arm.large.description": "A Large Stave allowing for powerful shots but require a long reload between shots.",
+    "miapi.module.archery.crossbow.arms.large": "Large Crossbow Stave",
+    "miapi.module.archery.crossbow.arms.large.name": "Large %s Crossbow",
+    "miapi.module.archery.crossbow.arms.large.description": "A Large Stave allowing for powerful shots but require a long reload between shots.",
 
 
     "miapi.module.archery.crossbow.string.normal": "Crossbow String",

@@ -34,7 +34,7 @@
     ],
     "durability": "[material.durability]* 0.5",
     "rapid_fire_crossbow": "1 + [material.hardness] / 4 + [material.mining_level] / 3",
-    "rapid_fire_crossbow_delay": "16",
+    "rapid_fire_crossbow_delay": "12",
     "attributes": [
         {
             "attribute": "miapi:generic.projectile_speed",
@@ -50,14 +50,8 @@
         },
         {
             "attribute": "miapi:generic.draw_time",
-            "value": "-20",
+            "value": "1.25",
             "operation": "+",
-            "slot": "mainhand"
-        },
-        {
-            "attribute": "miapi:generic.draw_time",
-            "value": "0.5 * ( 2 + [material.hardness] / 4 + [material.mining_level] / 3 )",
-            "operation": "**",
             "slot": "mainhand"
         }
     ],
