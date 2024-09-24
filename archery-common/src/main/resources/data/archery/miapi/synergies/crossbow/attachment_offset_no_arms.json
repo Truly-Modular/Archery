@@ -1,0 +1,66 @@
+{
+    "type": "tag",
+    "crossbow_stock": {
+        "condition": {
+            "type": "not",
+            "condition": {
+                "type": "otherModule",
+                "condition": {
+                    "type": "tag",
+                    "tag": "crossbow_arms"
+                }
+            }
+        },
+        "replace": {
+            "slots": {
+                "arms": {
+                    "allowed": [
+                        "crossbow_arm"
+                    ],
+                    "translationKey": "miapi.slot.crossbow_stave.name",
+                    "transform": {
+                        "rotation": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "translation": {
+                            "x": -0.01,
+                            "y": -0.01,
+                            "z": -0.326
+                        },
+                        "scale": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1.04
+                        }
+                    }
+                },
+                "attachments": {
+                    "allowed": [
+                        "crossbow-attachments"
+                    ],
+                    "priority": 1,
+                    "translationKey": "miapi.slot.crossbow_attachment.name",
+                    "transform": {
+                        "rotation": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "translation": {
+                            "x": 1,
+                            "y": -1,
+                            "z": 0
+                        },
+                        "scale": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

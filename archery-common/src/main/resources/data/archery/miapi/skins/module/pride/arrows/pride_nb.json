@@ -1,0 +1,28 @@
+{
+    "path": "pride/pride-arrow_shaft_nb",
+    "module_tags": [
+        "arrow_shaft"
+    ],
+    "replace": {
+        "overlay_texture_model": [
+            {
+                "colorProvider": "material:rainbow_pride_nb",
+                "modelTargetType": "id",
+                "modelTargetInfo": "aligned",
+                "allowOtherModules": true
+            }
+        ]
+    },
+    "condition": {
+        "type": "miapi_perm",
+        "perms": [
+            "pride",
+            "supporter"
+        ]
+    },
+    "model": {
+        "color": "FFFFFF",
+        "scale": 0,
+        "borderSize": 0
+    }
+}

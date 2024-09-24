@@ -1,0 +1,28 @@
+{
+    "path": "pride/pride-crossbow_arm_ace",
+    "module_tags": [
+        "crossbow_arms"
+    ],
+    "replace": {
+        "overlay_texture_model": [
+            {
+                "colorProvider": "material:rainbow_pride_ace",
+                "modelTargetType": "path",
+                "modelTargetInfo": "",
+                "allowOtherModules": true
+            }
+        ]
+    },
+    "condition": {
+        "type": "miapi_perm",
+        "perms": [
+            "pride",
+            "supporter"
+        ]
+    },
+    "model": {
+        "color": "FFFFFF",
+        "scale": 0,
+        "borderSize": 0
+    }
+}

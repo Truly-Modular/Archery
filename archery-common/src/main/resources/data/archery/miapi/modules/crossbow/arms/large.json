@@ -1,0 +1,94 @@
+{
+    "model": {
+        "path": "miapi:models/item/crossbow/stave/large/[material.texture].json",
+        "transform": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "translation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        }
+    },
+    "priority": 3,
+    "repair_priority": 1,
+    "material_property": [
+        "default",
+        "handheld",
+        "crossbow"
+    ],
+    "allowed_in_slots": [
+        "crossbow_arm"
+    ],
+    "tag": [
+        "crossbow_arms",
+        "crossbow_arms_large",
+        "string_normal"
+    ],
+    "slots": {
+        "string": {
+            "allowed": [
+                "crossbow_string"
+            ],
+            "translationKey": "miapi.slot.crossbow_string.name",
+            "transform": {
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "translation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        }
+    },
+    "attributes": [
+        {
+            "attribute": "miapi:generic.projectile_speed",
+            "value": "( [material.hardness] * 2.5 + [material.flexibility] * 1.5 ) / 3 - 2.5",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.draw_time",
+            "value": "-([material.hardness]/2.5 - 1) * 16",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.projectile_accuracy",
+            "value": "+([material.hardness])/10 + 10",
+            "operation": "+",
+            "slot": "mainhand"
+        }
+    ],
+    "rapid_fire_crossbow_delay": "4",
+    "durability": "[material.durability]* 0.5",
+    "allowed_material": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "netherite"
+        ],
+        "cost": 3
+    }
+}

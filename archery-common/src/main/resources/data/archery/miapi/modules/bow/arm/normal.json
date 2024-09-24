@@ -1,0 +1,91 @@
+{
+    "model": {
+        "path": "miapi:models/item/bow/arms/normal/[material.texture].json",
+        "transform": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "translation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        }
+    },
+    "priority": 1,
+    "repair_priority": 1,
+    "material_property": [
+        "default",
+        "handheld",
+        "bow"
+    ],
+    "better_combat_config": {
+        "parent": "bettercombat:bow_two_handed_light"
+    },
+    "allowed_in_slots": [
+        "bow_arm"
+    ],
+    "tag": [
+        "bow_arms",
+        "string_normal"
+    ],
+    "slots": {
+        "string": {
+            "allowed": [
+                "bow_string"
+            ],
+            "translationKey": "miapi.slot.bow_string.name",
+            "transform": {
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "translation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        }
+    },
+    "attributes": [
+        {
+            "attribute": "miapi:generic.projectile_speed",
+            "value": "( [material.hardness] * 2 + [material.flexibility] ) / 9 - 1",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.draw_time",
+            "value": "0.8 + [material.hardness]/15",
+            "operation": "+",
+            "slot": "mainhand"
+        }
+    ],
+    "durability": "[material.durability]* 0.5",
+    "allowed_material": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "netherite"
+        ],
+        "cost": 2
+    },
+    "item_id": "miapi:modular_bow",
+    "display_name": "miapi.module.archery.bow.arm.normal.name"
+}

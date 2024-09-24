@@ -1,0 +1,67 @@
+{
+    "model": {
+        "path": "miapi:models/item/arrow/head/normal/[material.texture].json",
+        "id": "aligned",
+        "transform": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "translation": {
+                "x": -4,
+                "y": -4,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        }
+    },
+    "material_property": [
+        "default",
+        "arrow"
+    ],
+    "priority": 0,
+    "allowed_in_slots": [
+        "arrow_head"
+    ],
+    "tag": [
+        "arrow_head"
+    ],
+    "attributes": [
+        {
+            "attribute": "miapi:generic.projectile_damage",
+            "value": "2",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.projectile_speed",
+            "value": "( - [material.density] ) / 10 + 0.3",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.crit_damage",
+            "value": "([material.hardness] / (3.7) - 1)*0.25",
+            "operation": "*",
+            "slot": "mainhand",
+            "target_operation": "*"
+        }
+    ],
+    "allowed_material": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "crystal",
+            "glass"
+        ],
+        "cost": 0.1111
+    }
+}

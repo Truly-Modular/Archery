@@ -1,0 +1,16 @@
+{
+    "type": "tag",
+    "crossbow_arms": {
+        "condition": {
+            "type": "otherModule",
+            "condition": {
+                "type": "tag",
+                "tag": "crossbow_string"
+            }
+        },
+        "replace": {
+            "displayName": "miapi.module.archery.crossbow.name",
+            "itemId": "miapi:modular_crossbow"
+        }
+    }
+}

@@ -1,0 +1,233 @@
+{
+    "model": {
+        "path": "miapi:models/item/arrow/shaft/normal/[material.texture].json",
+        "id": "aligned",
+        "transform": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "translation": {
+                "x": 0,
+                "y": 0,
+                "z": 0.4
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 0.95
+            }
+        }
+    },
+    "material_property": [
+        "default",
+        "arrow"
+    ],
+    "allowed_in_slots": [
+        "arrow_shaft"
+    ],
+    "tag": [
+        "arrow_shaft"
+    ],
+    "is_arrow": true,
+    "allowed_material": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "crystal",
+            "rod",
+            "glass"
+        ],
+        "cost": 0.1111
+    },
+    "attributes": [
+        {
+            "attribute": "miapi:generic.projectile_speed",
+            "value": " (( - [material.density]) / 1.7 + 1) / 10",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.projectile_damage",
+            "value": "[material.hardness]/3 - 1 ",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.projectile_accuracy",
+            "value": "( ( ( [material.flexibility] - [material.density] ) / ( 4.3 ) ) - 1 ) /6",
+            "operation": "+",
+            "slot": "mainhand"
+        }
+    ],
+    "model_transform": {
+        "ground": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "translation": {
+                "x": 0,
+                "y": 2,
+                "z": 0
+            },
+            "scale": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 0.5
+            }
+        },
+        "head": {
+            "rotation": {
+                "x": 0,
+                "y": 180,
+                "z": 0
+            },
+            "translation": {
+                "x": 0,
+                "y": 13,
+                "z": 7
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        },
+        "thirdperson_righthand": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "translation": {
+                "x": 0,
+                "y": 3,
+                "z": 1
+            },
+            "scale": {
+                "x": 0.55,
+                "y": 0.55,
+                "z": 0.55
+            }
+        },
+        "thirdperson_lefthand": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "translation": {
+                "x": 0,
+                "y": 3,
+                "z": 1
+            },
+            "scale": {
+                "x": 0.55,
+                "y": 0.55,
+                "z": 0.55
+            }
+        },
+        "firstperson_righthand": {
+            "rotation": {
+                "x": 0,
+                "y": -90,
+                "z": 25
+            },
+            "translation": {
+                "x": 1.13,
+                "y": 3.2,
+                "z": 1.13
+            },
+            "scale": {
+                "x": 0.68,
+                "y": 0.68,
+                "z": 0.68
+            }
+        },
+        "firstperson_lefthand": {
+            "rotation": {
+                "x": -90,
+                "y": -90,
+                "z": 25
+            },
+            "translation": {
+                "x": 1.13,
+                "y": 3.2,
+                "z": 1.13
+            },
+            "scale": {
+                "x": 0.68,
+                "y": 0.68,
+                "z": 0.68
+            }
+        },
+        "fixed": {
+            "rotation": {
+                "x": 0,
+                "y": 180,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        }
+    },
+    "slots": {
+        "head": {
+            "allowed": [
+                "arrow_head"
+            ],
+            "translationKey": "miapi.slot.arrow_head.name",
+            "transform": {
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "translation": {
+                    "x": 4,
+                    "y": 4,
+                    "z": 0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        },
+        "shaft": {
+            "allowed": [
+                "arrow_tail"
+            ],
+            "priority": 1,
+            "translationKey": "miapi.slot.arrow_tail.name",
+            "transform": {
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "translation": {
+                    "x": -4,
+                    "y": -4,
+                    "z": 0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        }
+    },
+    "item_id": "miapi:modular_arrow_part"
+}

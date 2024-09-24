@@ -1,0 +1,60 @@
+{
+    "model": {
+        "path": "miapi:models/item/arrow/tail/finns/[material.texture].json",
+        "id": "aligned",
+        "transform": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "translation": {
+                "x": 4,
+                "y": 4,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        }
+    },
+    "material_property": [
+        "default",
+        "arrow"
+    ],
+    "allowed_in_slots": [
+        "arrow_tail"
+    ],
+    "allowed_material": {
+        "allowedMaterials": [
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "crystal",
+            "glass"
+        ],
+        "cost": 0.1111
+    },
+    "water_drag": "0.99",
+    "air_drag": "0.90",
+    "tag": [
+        "arrow_tail"
+    ],
+    "attributes": [
+        {
+            "attribute": "miapi:generic.projectile_speed",
+            "value": "( - [material.density] ) / 1 * 0 ",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.projectile_accuracy",
+            "value": "[material.flexibility]/7 - 1",
+            "operation": "+",
+            "slot": "mainhand"
+        }
+    ]
+}

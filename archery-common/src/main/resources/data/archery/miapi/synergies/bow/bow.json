@@ -1,0 +1,19 @@
+{
+    "type": "tag",
+    "bow_arms": {
+        "condition": {
+            "type": "not",
+            "condition": {
+                "type": "otherModule",
+                "condition": {
+                    "type": "tag",
+                    "tag": "bow_string"
+                }
+            }
+        },
+        "replace": {
+            "display_name": "miapi.module.archery.bow.handle.normal.name",
+            "item_id": "miapi:modular_bow_part"
+        }
+    }
+}

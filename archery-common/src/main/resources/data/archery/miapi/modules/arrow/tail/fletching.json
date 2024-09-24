@@ -1,0 +1,55 @@
+{
+    "model": {
+        "path": "miapi:models/item/arrow/tail/normal/[material.texture].json",
+        "id": "aligned",
+        "transform": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "translation": {
+                "x": 4,
+                "y": 4,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        }
+    },
+    "material_property": [
+        "default",
+        "arrow"
+    ],
+    "water_drag": "0.6",
+    "air_drag": "1.0",
+    "allowed_in_slots": [
+        "arrow_tail"
+    ],
+    "allowed_material": {
+        "allowedMaterials": [
+            "fletching"
+        ],
+        "cost": 0.1111
+    },
+    "tag": [
+        "arrow_tail"
+    ],
+    "attributes": [
+        {
+            "attribute": "miapi:generic.projectile_speed",
+            "value": "( - [material.density] ) / 1",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.projectile_accuracy",
+            "value": "[material.flexibility]/7 - 1",
+            "operation": "+",
+            "slot": "mainhand"
+        }
+    ]
+}

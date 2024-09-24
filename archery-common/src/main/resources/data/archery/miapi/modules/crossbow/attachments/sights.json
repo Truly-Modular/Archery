@@ -1,0 +1,54 @@
+{
+    "model": {
+        "path": "miapi:models/item/crossbow/attachments/sights/[material.texture].json",
+        "transform": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "translation": {
+                "x": 0,
+                "y": -0.01,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        }
+    },
+    "repair_priority": 0,
+    "priority": 1,
+    "material_property": [
+        "default",
+        "handheld",
+        "crossbow",
+        "crossbow_attachment"
+    ],
+    "allowed_in_slots": [
+        "crossbow-attachments"
+    ],
+    "durability": "[material.durability]* 0.1",
+    "allowed_material": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "crystal",
+            "glass"
+        ],
+        "cost": 1
+    },
+    "attributes": [
+        {
+            "attribute": "miapi:generic.projectile_accuracy",
+            "value": "[material.hardness]/5",
+            "operation": "+",
+            "slot": "mainhand"
+        }
+    ]
+}

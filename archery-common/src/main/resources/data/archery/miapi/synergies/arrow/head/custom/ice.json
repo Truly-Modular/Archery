@@ -1,0 +1,32 @@
+{
+    "arrow_head_custom": {
+        "condition": {
+            "type": "material",
+            "material": "miapi:custom/ice"
+        },
+        "replace": {
+            "model": {
+                "path": "miapi:models/item/arrow/head/normal/ice.json",
+                "color_provider": "model",
+                "transform": {
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "translation": {
+                        "x": -0.01,
+                        "y": -0.01,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                }
+            },
+            "cryo": 2
+        }
+    }
+}
