@@ -46,15 +46,33 @@
     "miapi.slot.crossbow_front_attachment.name": "Empty Front Attachment Slot",
     "miapi.slot.crossbow_string.name": "Empty String Slot",
 
-    "miapi.module.archery.bow.head.normal": "Arrow Head",
-    "miapi.module.archery.bow.head.normal.name": "%s Arrow Head",
-    "miapi.module.archery.bow.head.normal.description": "The Front piece of an arrow, determines how an Arrow Impacts a Target.",
-    "miapi.module.archery.bow.head.normal.short_description": "The Head of an Arrow.",
+    "miapi.module.archery.arrow.head.normal": "Arrow Head",
+    "miapi.module.archery.arrow.head.normal.name": "%s Arrow Head",
+    "miapi.module.archery.arrow.head.normal.description": "The Front piece of an arrow, determines how an Arrow Impacts a Target.",
 
-    "miapi.module.archery.bow.head.custom": "Custom Arrow Head",
-    "miapi.module.archery.bow.head.custom.name": "%s Arrow Head",
-    "miapi.module.archery.bow.head.custom.description": "A custom arrow Head, highly dependant on the used Material.",
-    "miapi.module.archery.bow.head.custom.short_description": "The Head of an Arrow.",
+    "miapi.module.archery.arrow.head.chorus_fruit": "Chorus Head",
+    "miapi.module.archery.arrow.head.chorus_fruit.name": "%s Arrow Head",
+    "miapi.module.archery.arrow.head.chorus_fruit.description": "Teleports hit target randomly.",
+
+    "miapi.module.archery.arrow.head.ender_pearl": "Ender Pearl Head",
+    "miapi.module.archery.arrow.head.ender_pearl.name": "%s Arrow Head",
+    "miapi.module.archery.arrow.head.ender_pearl.description": "Teleports you to where the arrow hits.",
+
+    "miapi.module.archery.arrow.head.explosive": "Explosive Head",
+    "miapi.module.archery.arrow.head.explosive.name": "%s Arrow Head",
+    "miapi.module.archery.arrow.head.explosive.description": "Explodes on impact. Gunpowder doesn't do block damage, TNT does.",
+
+    "miapi.module.archery.arrow.head.ice": "Ice Head",
+    "miapi.module.archery.arrow.head.ice.name": "%s Arrow Head",
+    "miapi.module.archery.arrow.head.ice.description": "Freezes targets when hit.",
+
+    "miapi.module.archery.arrow.head.lighting_rod": "Lighting Head",
+    "miapi.module.archery.arrow.head.lighting_rod.name": "%s Arrow Head",
+    "miapi.module.archery.arrow.head.lighting_rod.description": "Calls down lighting like a Channeling Trident.",
+
+    "miapi.module.archery.arrow.head.potion": "Potion Head",
+    "miapi.module.archery.arrow.head.potion.name": "%s Arrow Head",
+    "miapi.module.archery.arrow.head.potion.description": "Allows long distance potion deliveries.",
 
     "miapi.module.archery.arrow.shaft.normal": "Arrow Shaft",
     "miapi.module.archery.arrow.shaft.normal.name": "%s Arrow Shaft",

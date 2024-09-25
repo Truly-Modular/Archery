@@ -1,0 +1,58 @@
+{
+    "model": {
+        "path": "miapi:models/item/arrow/head/normal/ice.json",
+        "color_provider": "model",
+        "transform": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "translation": {
+                "x": -0.01,
+                "y": -0.01,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        }
+    },
+    "allowed_in_slots": [
+        "arrow_head"
+    ],
+    "tag": [
+        "arrow_head"
+    ],
+    "priority": 6,
+    "attributes": [
+        {
+            "attribute": "miapi:generic.projectile_damage",
+            "value": "2",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.projectile_speed",
+            "value": " - 0.2",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.crit_damage",
+            "value": "-0.5",
+            "operation": "*",
+            "slot": "mainhand",
+            "target_operation": "*"
+        }
+    ],
+    "allowed_material": {
+        "allowedMaterials": [
+            "miapi:custom/ice"
+        ],
+        "cost": 1
+    },
+    "cryo": 2
+}

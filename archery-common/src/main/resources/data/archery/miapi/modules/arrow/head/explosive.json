@@ -5,7 +5,7 @@
     "tag": [
         "arrow_head"
     ],
-    "priority": 1,
+    "priority": 2,
     "attributes": [
         {
             "attribute": "miapi:generic.projectile_damage",
@@ -29,14 +29,8 @@
     ],
     "allowed_material": {
         "allowedMaterials": [
-            "ender_pearl",
-            "chorus_fruit",
-            "tnt",
-            "gunpowder",
-            "splash_potion",
-            "lingering_potion",
-            "lightning_rod",
-            "ice"
+            "miapi:custom/tnt",
+            "miapi:custom/gunpowder"
         ],
         "cost": 1
     }

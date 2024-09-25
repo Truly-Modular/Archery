@@ -1,5 +1,5 @@
 {
-    "arrow_head_custom": {
+    "archery:arrow/head/explosive": {
         "condition": {
             "type": "material",
             "material": "miapi:custom/gunpowder"
