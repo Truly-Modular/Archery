@@ -158,8 +158,7 @@
     },
     "enchantments": {
         "allowed": [
-            "miapi:basic",
-            "miapi:crossbow"
+            "minecraft:enchantable/crossbow"
         ]
     },
     "allowed_material": {

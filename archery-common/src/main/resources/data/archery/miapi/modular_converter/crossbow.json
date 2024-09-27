@@ -1,31 +1,37 @@
 {
     "minecraft:crossbow": {
-        "module": "crossbow_stock_normal",
-        "moduleData": {
-            "properties": "{\"material\":\"wood\"}"
+        "key": "archery:crossbow/stock/normal",
+        "data": {
+            "properties": {
+                "material": "miapi:wood/wood"
+            }
         },
-        "subModules": {
-            "0": {
-                "module": "crossbow_arms_normal",
-                "moduleData": {
-                    "properties": "{\"material\":\"wood\"}"
+        "child": {
+            "arms": {
+                "key": "archery:crossbow/arms/normal",
+                "data": {
+                    "properties": {
+                        "material": "miapi:wood/wood"
+                    }
                 },
-                "subModules": {
-                    "0": {
-                        "module": "crossbow_string_normal",
-                        "moduleData": {
-                            "properties": "{\"material\":\"string\"}"
-                        },
-                        "subModules": {}
+                "child": {
+                    "string": {
+                        "key": "archery:crossbow/string/normal",
+                        "data": {
+                            "properties": {
+                                "material": "miapi:rope/string"
+                            }
+                        }
                     }
                 }
             },
-            "-1": {
-                "module": "crossbow_attachments_styrup",
-                "moduleData": {
-                    "properties": "{\"material\":\"iron\"}"
-                },
-                "subModules": {}
+            "attachment": {
+                "key": "archery:crossbow/attachments/styrup",
+                "data": {
+                    "properties": {
+                        "material": "miapi:metal/iron"
+                    }
+                }
             }
         }
     }

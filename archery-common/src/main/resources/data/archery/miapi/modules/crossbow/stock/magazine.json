@@ -47,14 +47,9 @@
             "value": " -0.05 ",
             "operation": "+",
             "slot": "mainhand"
-        },
-        {
-            "attribute": "miapi:generic.draw_time",
-            "value": "1.25",
-            "operation": "+",
-            "slot": "mainhand"
         }
     ],
+    "draw_time": "1.25",
     "slots": {
         "arms": {
             "allowed": [
@@ -180,8 +175,7 @@
     },
     "enchantments": {
         "allowed": [
-            "miapi:basic",
-            "miapi:crossbow"
+            "minecraft:enchantable/crossbow"
         ]
     },
     "allowed_material": {

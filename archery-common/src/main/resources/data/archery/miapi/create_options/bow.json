@@ -1,4 +1,5 @@
 {
     "module": "archery:bow/handle/normal",
-    "translation": "miapi.create_item.bow"
+    "translation": "miapi.create_item.bow",
+    "priority":-11
 }

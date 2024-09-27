@@ -69,22 +69,20 @@
             "slot": "mainhand"
         },
         {
-            "attribute": "miapi:generic.draw_time",
-            "value": "0.8 + [material.hardness]/15",
-            "operation": "+",
-            "slot": "mainhand"
-        },
-        {
             "attribute": "miapi:generic.projectile_speed",
             "value": "-0.35",
             "operation": "**",
             "slot": "mainhand"
+        }
+    ],
+    "draw_time": [
+        {
+            "value": "-0.3",
+            "operation": "**"
         },
         {
-            "attribute": "miapi:generic.draw_time",
-            "value": "-0.3",
-            "operation": "**",
-            "slot": "mainhand"
+            "value": "0.8 + [material.hardness]/15",
+            "operation": "+"
         }
     ],
     "durability": "[material.durability]* 0.5",

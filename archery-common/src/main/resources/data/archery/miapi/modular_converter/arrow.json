@@ -1,23 +1,27 @@
 {
     "minecraft:arrow": {
-        "module": "arrow_shaft_normal",
-        "moduleData": {
-            "properties": "{\"material\":\"wood\"}"
+        "key": "archery:arrow/shaft/normal",
+        "data": {
+            "properties": {
+                "material": "miapi:wood/wood"
+            }
         },
-        "subModules": {
-            "0": {
-                "module": "arrow_head_normal",
-                "moduleData": {
-                    "properties": "{\"material\":\"flint\"}"
-                },
-                "subModules": {}
+        "child": {
+            "head": {
+                "key": "archery:arrow/head/normal",
+                "data": {
+                    "properties": {
+                        "material": "miapi:flint/flint"
+                    }
+                }
             },
-            "1": {
-                "module": "arrow_fletching_normal",
-                "moduleData": {
-                    "properties": "{\"material\":\"feather\"}"
-                },
-                "subModules": {}
+            "shaft": {
+                "key": "archery:arrow/tail/fletching",
+                "data": {
+                    "properties": {
+                        "material": "miapi:fletching/feather"
+                    }
+                }
             }
         }
     }

@@ -30,12 +30,6 @@
     ],
     "attributes": [
         {
-            "attribute": "miapi:generic.draw_time",
-            "value": "-([material.hardness]-1)*3",
-            "operation": "+",
-            "slot": "mainhand"
-        },
-        {
             "attribute": "miapi:generic.projectile_speed",
             "value": "([material.hardness]-1)/2",
             "operation": "+",
@@ -48,6 +42,7 @@
             "slot": "mainhand"
         }
     ],
+    "draw_time": "-([material.hardness]-1)*3",
     "durability": "[material.durability]* 0.5",
     "allowed_material": {
         "allowedMaterials": [

@@ -42,12 +42,10 @@
         ],
         "cost": 1
     },
-    "attributes": [
+    "draw_time": [
         {
-            "attribute": "miapi:generic.draw_time",
             "value": "-0.286",
-            "operation": "**",
-            "slot": "mainhand"
+            "operation": "**"
         }
     ]
 }

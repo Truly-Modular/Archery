@@ -1,24 +1,47 @@
 {
-    "model": {
-        "path": "miapi:models/item/bow/handle/normal/[material.texture].json",
-        "transform": {
-            "rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "translation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
+    "model": [
+        {
+            "path": "miapi:models/item/bow/handle/normal/[material.texture].json",
+            "transform": {
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "translation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        },
+        {
+            "path": "miapi:models/item/bow/handle/normal_arrow/[material.texture].json",
+            "color": "model",
+            "transform": {
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "translation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
             }
         }
-    },
+    ],
     "repair_priority": 0,
     "material_property": [
         "default",
@@ -37,14 +60,12 @@
             "value": "([material.hardness]-3.0)",
             "operation": "+",
             "slot": "mainhand"
-        },
-        {
-            "attribute": "miapi:generic.draw_time",
-            "value": "-0.1",
-            "operation": "*",
-            "slot": "mainhand"
         }
     ],
+    "draw_time": {
+        "value": "-0.1",
+        "operation": "*"
+    },
     "allowed_in_slots": [
         "bow"
     ],
@@ -163,8 +184,7 @@
     },
     "enchantments": {
         "allowed": [
-            "miapi:basic",
-            "miapi:bow"
+            "minecraft:enchantable/bow"
         ]
     },
     "allowed_material": {

@@ -67,18 +67,13 @@
             "slot": "mainhand"
         },
         {
-            "attribute": "miapi:generic.draw_time",
-            "value": "(29 +[material.hardness]*2)/15",
-            "operation": "+",
-            "slot": "mainhand"
-        },
-        {
             "attribute": "miapi:generic.projectile_accuracy",
             "value": "+([material.hardness])/10 + 10",
             "operation": "+",
             "slot": "mainhand"
         }
     ],
+    "draw_time": "(29 +[material.hardness]*2)/15",
     "rapid_fire_crossbow_delay": "4",
     "durability": "[material.durability]* 0.5",
     "allowed_material": {
