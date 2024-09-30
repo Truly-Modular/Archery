@@ -33,7 +33,7 @@
         "crossbow"
     ],
     "durability": "[material.durability]* 0.5",
-    "rapid_fire_crossbow": "1 + [material.hardness] / 4 + [material.mining_level] / 3",
+    "rapid_fire_crossbow": "1 + [material.hardness] / 4 + [material.flexibility] / 3",
     "rapid_fire_crossbow_delay": "12",
     "attributes": [
         {

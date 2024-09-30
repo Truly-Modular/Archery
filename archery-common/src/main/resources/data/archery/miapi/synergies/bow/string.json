@@ -1,5 +1,5 @@
 {
-    "bow_string_normal": {
+    "archery:bow/string/normal": {
         "condition": {
             "type": "otherModule",
             "condition": {
