@@ -9,8 +9,8 @@
             }
         },
         "replace": {
-            "displayName": "miapi.modular_arrow",
-            "itemId": "miapi:modular_arrow"
+            "display_name": "miapi.modular_arrow",
+            "item_id": "miapi:modular_arrow"
         }
     }
 }

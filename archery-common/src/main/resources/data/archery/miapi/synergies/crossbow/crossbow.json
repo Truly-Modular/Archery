@@ -12,8 +12,8 @@
             }
         },
         "replace": {
-            "displayName": "miapi.module.archery.crossbow.stock.normal.name",
-            "itemId": "miapi:modular_crossbow_part"
+            "display_name": "miapi.module.archery.crossbow.stock.normal.name",
+            "item_id": "miapi:modular_crossbow_part"
         }
     }
 }
