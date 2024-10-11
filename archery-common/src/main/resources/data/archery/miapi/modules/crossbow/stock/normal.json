@@ -58,7 +58,7 @@
                 }
             }
         },
-        "attachment": {
+        "attachments": {
             "allowed": [
                 "crossbow-attachments"
             ],
