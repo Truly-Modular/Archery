@@ -1,7 +1,7 @@
 {
     "archery:bow/string/normal": {
         "condition": {
-            "type": "otherModule",
+            "type": "other_module",
             "condition": {
                 "type": "tag",
                 "tag": "string_long"

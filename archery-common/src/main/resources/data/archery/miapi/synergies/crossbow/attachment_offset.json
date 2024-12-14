@@ -2,7 +2,7 @@
     "type": "tag",
     "crossbow_stock": {
         "condition": {
-            "type": "otherModule",
+            "type": "other_module",
             "condition": {
                 "type": "tag",
                 "tag": "crossbow_arms_large"
