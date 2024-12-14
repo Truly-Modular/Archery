@@ -44,7 +44,7 @@
     },
     "draw_time": [
         {
-            "value": "-0.286",
+            "value": "-0.236 - [material.hardness]* 0.01",
             "operation": "**"
         }
     ]
