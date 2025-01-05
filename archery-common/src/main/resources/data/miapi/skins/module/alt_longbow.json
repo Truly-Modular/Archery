@@ -1,0 +1,39 @@
+{
+    "path": "longbow_alt",
+    "module": "bow_arms_long",
+    "replace": {
+        "texture": {
+            "path": "miapi:models/item/bow/arms/long/alt/[material.texture].json",
+            "transform": {
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "translation": {
+                    "x": -5.0,
+                    "y": -11.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 2.0,
+                    "y": 2.0,
+                    "z": 1.0
+                }
+            }
+        }
+    },
+    "condition": {
+        "type": "miapi_perm",
+        "perms": [
+            "user",
+            "supporter",
+            "longbow"
+        ]
+    },
+    "texture": {
+        "color": "FFFFFF",
+        "scale": 0,
+        "borderSize": 0
+    }
+}
