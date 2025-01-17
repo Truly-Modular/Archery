@@ -26,9 +26,7 @@
         "handheld",
         "bow"
     ],
-    "better_combat_config": {
-        "parent": "bettercombat:bow_two_handed_heavy"
-    },
+    "better_combat_config": "bettercombat:bow_two_handed_heavy",
     "allowed_in_slots": [
         "bow_arm"
     ],

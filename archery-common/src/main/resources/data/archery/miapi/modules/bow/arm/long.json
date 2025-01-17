@@ -58,9 +58,7 @@
             }
         }
     },
-    "better_combat_config": {
-        "parent": "bettercombat:bow_two_handed_heavy"
-    },
+    "better_combat_config": "bettercombat:bow_two_handed_heavy",
     "attributes": [
         {
             "attribute": "miapi:generic.projectile_speed",
