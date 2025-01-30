@@ -20,6 +20,8 @@
             }
         }
     },
+    "inscribe_on_craft": "message",
+    "projectile_drop_item":"message",
     "material_property": [
         "default",
         "arrow"
@@ -34,34 +36,28 @@
     "attributes": [
         {
             "attribute": "miapi:generic.projectile_damage",
-            "value": "2",
+            "value": "-1",
+            "operation": "**",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.projectile_damage",
+            "value": "-2",
             "operation": "+",
             "slot": "mainhand"
         },
         {
             "attribute": "miapi:generic.projectile_speed",
-            "value": "( - [material.density] ) / 10 + 0.3",
+            "value": "1",
             "operation": "+",
             "slot": "mainhand"
-        },
-        {
-            "attribute": "miapi:generic.crit_damage",
-            "value": "([material.hardness] / (3.7) - 1)*0.25",
-            "operation": "*",
-            "slot": "mainhand",
-            "target_operation": "*"
         }
     ],
     "allowed_material": {
         "allowedMaterials": [
-            "wood",
-            "metal",
-            "flint",
-            "bone",
-            "stone",
-            "crystal",
-            "glass",
-            "wool"
+            "miapi:custom/paper",
+            "miapi:custom/book",
+            "miapi:custom/nametag"
         ],
         "cost": 0.1111
     }

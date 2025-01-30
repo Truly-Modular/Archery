@@ -1,10 +1,56 @@
 {
+    "model": [
+        {
+            "path": "miapi:models/item/arrow/head/normal/splash_potion.json",
+            "color_provider": "model",
+            "transform": {
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "translation": {
+                    "x": -0.01,
+                    "y": -0.01,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            }
+        },
+        {
+            "path": "miapi:models/item/arrow/head/normal/potion_overlay.json",
+            "color_provider": "potion",
+            "transform": {
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "translation": {
+                    "x": -0.01,
+                    "y": -0.01,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            }
+        }
+    ],
     "allowed_in_slots": [
         "arrow_head"
     ],
     "tag": [
         "arrow_head"
     ],
+    "inscribe_on_craft": "potion",
+    "replace_projectile": "potion",
     "priority": 3,
     "attributes": [
         {

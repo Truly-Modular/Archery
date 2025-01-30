@@ -74,10 +74,16 @@
     "miapi.module.archery.arrow.head.potion.name": "%s Arrow Head",
     "miapi.module.archery.arrow.head.potion.description": "Allows long distance potion deliveries.",
 
+    "miapi.module.archery.arrow.head.message": "Message",
+    "miapi.module.archery.arrow.head.message.name": "%s Message Head",
+    "miapi.module.archery.arrow.head.message.description": "Allows attaching a message to the Arrow.",
+
     "miapi.module.archery.arrow.shaft.normal": "Arrow Shaft",
     "miapi.module.archery.arrow.shaft.normal.name": "%s Arrow Shaft",
     "miapi.module.archery.arrow.shaft.normal.description": "Shaft of an arrow, determines weight speed and impact of an Arrow",
     "miapi.module.archery.arrow.shaft.normal.short_description": "The Shaft of an Arrow.",
+
+
 
     "miapi.module.archery.arrow.tail.fletching": "Arrow Fletching",
     "miapi.module.archery.arrow.tail.fletching.name": "%s Arrow Fletching",
