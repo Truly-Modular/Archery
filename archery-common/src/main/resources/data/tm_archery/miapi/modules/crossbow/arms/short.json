@@ -1,6 +1,6 @@
 {
     "model": {
-        "path": "miapi:models/item/bow/arms/recurve/[material.texture].json",
+        "path": "miapi:models/item/crossbow/stave/short/[material.texture].json",
         "transform": {
             "rotation": {
                 "x": 0,
@@ -19,27 +19,27 @@
             }
         }
     },
-    "priority": 2,
+    "priority": 1,
     "repair_priority": 1,
     "material_property": [
         "default",
         "handheld",
-        "bow"
+        "crossbow"
     ],
-    "better_combat_config": "bettercombat:bow_two_handed_heavy",
     "allowed_in_slots": [
-        "bow_arm"
+        "crossbow_arm"
     ],
     "tag": [
-        "bow_arms",
+        "crossbow_arms",
+        "crossbow_arms_short",
         "string_normal"
     ],
     "slots": {
         "string": {
             "allowed": [
-                "bow_string"
+                "crossbow_string"
             ],
-            "translationKey": "miapi.slot.bow_string.name",
+            "translationKey": "miapi.slot.crossbow_string.name",
             "transform": {
                 "rotation": {
                     "x": 0,
@@ -62,28 +62,20 @@
     "attributes": [
         {
             "attribute": "miapi:generic.projectile_speed",
-            "value": "( [material.hardness] * 2 + [material.flexibility] ) / 9 - 1",
+            "value": "( [material.hardness] * 1.8 + [material.flexibility] * 0.9 ) / 3 - 3.2",
             "operation": "+",
             "slot": "mainhand"
         },
         {
-            "attribute": "miapi:generic.projectile_speed",
-            "value": "0.2",
-            "operation": "**",
+            "attribute": "miapi:generic.projectile_accuracy",
+            "value": "-([material.hardness])/10",
+            "operation": "+",
             "slot": "mainhand"
         }
     ],
-    "draw_time": [
-        {
-            "value": "0.2",
-            "operation": "**"
-        },
-        {
-            "value": "0.8 + [material.hardness]/15",
-            "operation": "+"
-        }
-    ],
-    "durability": "[material.durability]* 0.5",
+    "draw_time": "(29 +[material.hardness]*2)/30",
+    "rapid_fire_crossbow_delay": "-8",
+    "durability": "[material.durability]* 0.4",
     "allowed_material": {
         "allowedMaterials": [
             "wood",
@@ -94,6 +86,6 @@
         ],
         "cost": 2
     },
-    "item_id": "miapi:modular_bow",
-    "display_name": "miapi.module.archery.bow.arm.recurve.name"
+    "display_name": "miapi.module.tm_archery.crossbow.arms.short.name",
+    "item_id": "miapi:modular_short_crossbow"
 }

@@ -1,6 +1,6 @@
 {
     "model": {
-        "path": "miapi:models/item/bow/arms/normal/[material.texture].json",
+        "path": "miapi:models/item/crossbow/stave/normal/[material.texture].json",
         "transform": {
             "rotation": {
                 "x": 0,
@@ -19,27 +19,26 @@
             }
         }
     },
-    "priority": 1,
+    "priority": 2,
     "repair_priority": 1,
     "material_property": [
         "default",
         "handheld",
-        "bow"
+        "crossbow"
     ],
-    "better_combat_config": "bettercombat:bow_two_handed_light",
     "allowed_in_slots": [
-        "bow_arm"
+        "crossbow_arm"
     ],
     "tag": [
-        "bow_arms",
+        "crossbow_arms",
         "string_normal"
     ],
     "slots": {
         "string": {
             "allowed": [
-                "bow_string"
+                "crossbow_string"
             ],
-            "translationKey": "miapi.slot.bow_string.name",
+            "translationKey": "miapi.slot.crossbow_string.name",
             "transform": {
                 "rotation": {
                     "x": 0,
@@ -62,12 +61,12 @@
     "attributes": [
         {
             "attribute": "miapi:generic.projectile_speed",
-            "value": "( [material.hardness] * 2 + [material.flexibility] ) / 9 - 1",
+            "value": "( [material.hardness] * 2 + [material.flexibility] ) / 3 - 3",
             "operation": "+",
             "slot": "mainhand"
         }
     ],
-    "draw_time": "0.8 + [material.hardness]/15",
+    "draw_time": "(29 +[material.hardness]*2)/20",
     "durability": "[material.durability]* 0.5",
     "allowed_material": {
         "allowedMaterials": [
@@ -79,6 +78,6 @@
         ],
         "cost": 2
     },
-    "item_id": "miapi:modular_bow",
-    "display_name": "miapi.module.archery.bow.arm.normal.name"
+    "display_name": "miapi.module.tm_archery.crossbow.arms.normal.name",
+    "item_id": "miapi:modular_crossbow"
 }

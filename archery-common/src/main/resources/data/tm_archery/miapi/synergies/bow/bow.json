@@ -12,7 +12,7 @@
             }
         },
         "replace": {
-            "display_name": "miapi.module.archery.bow.handle.normal.name",
+            "display_name": "miapi.module.tm_archery.bow.handle.normal.name",
             "item_id": "miapi:modular_bow_part"
         }
     }

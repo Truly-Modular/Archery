@@ -2,25 +2,19 @@
     "minecraft:arrow": {
         "key": "archery:arrow/shaft/normal",
         "data": {
-            "properties": {
-                "material": "miapi:wood/wood"
-            }
+            "miapi:material": "miapi:wood/wood"
         },
         "child": {
             "head": {
                 "key": "archery:arrow/head/normal",
                 "data": {
-                    "properties": {
-                        "material": "miapi:flint/flint"
-                    }
+                    "miapi:material": "miapi:flint/flint"
                 }
             },
             "shaft": {
                 "key": "archery:arrow/tail/fletching",
                 "data": {
-                    "properties": {
-                        "material": "miapi:fletching/feather"
-                    }
+                    "miapi:material": "miapi:fletching/feather"
                 }
             }
         }

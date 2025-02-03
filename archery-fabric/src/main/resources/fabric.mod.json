@@ -21,8 +21,8 @@
   "environment": "*",
   "entrypoints": {},
   "mixins": [
-    "archery.mixins.json",
-    "archery-common.mixins.json"
+    "tm_archery.mixins.json",
+    "tm_archery-common.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${fabric_loader_version}",

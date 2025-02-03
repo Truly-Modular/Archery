@@ -12,7 +12,7 @@
             }
         },
         "replace": {
-            "display_name": "miapi.module.archery.crossbow.stock.normal.name",
+            "display_name": "miapi.module.tm_archery.crossbow.stock.normal.name",
             "item_id": "miapi:modular_crossbow_part"
         }
     }

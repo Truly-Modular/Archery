@@ -2,25 +2,19 @@
     "minecraft:bow": {
         "key": "archery:bow/handle/normal",
         "data": {
-            "properties": {
-                "material": "miapi:wood/wood"
-            }
+            "miapi:material": "miapi:wood/wood"
         },
         "child": {
             "arms": {
                 "key": "archery:bow/arm/normal",
                 "data": {
-                    "properties": {
-                        "material": "miapi:wood/wood"
-                    }
+                    "miapi:material": "miapi:wood/wood"
                 },
                 "child": {
                     "string": {
                         "key": "archery:bow/string/normal",
                         "data": {
-                            "properties": {
-                                "material": "miapi:rope/string"
-                            }
+                            "miapi:material": "miapi:rope/string"
                         }
                     }
                 }
