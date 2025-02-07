@@ -56,5 +56,10 @@
             "operation": "+",
             "slot": "mainhand"
         }
-    ]
+    ],
+    "material_indication": {
+        "flexibility": 1,
+        "density": -1,
+        "durability": 1
+    }
 }

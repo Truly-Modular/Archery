@@ -59,6 +59,11 @@
             }
         }
     },
+    "material_indication": {
+        "flexibility": 2,
+        "hardness": 1,
+        "durability": 1
+    },
     "attributes": [
         {
             "attribute": "miapi:generic.projectile_speed",

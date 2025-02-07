@@ -52,6 +52,11 @@
             "target_operation": "*"
         }
     ],
+    "material_indication": {
+        "hardness": 2,
+        "density": -1,
+        "durability": 1
+    },
     "allowed_material": {
         "allowedMaterials": [
             "wood",

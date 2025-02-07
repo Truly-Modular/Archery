@@ -64,6 +64,12 @@
             "slot": "mainhand"
         }
     ],
+    "material_indication": {
+        "hardness": 2,
+        "flexibility": 1,
+        "density": -1,
+        "durability": 1
+    },
     "model_transform": {
         "ground": {
             "rotation": {

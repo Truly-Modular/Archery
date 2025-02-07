@@ -73,6 +73,11 @@
             "slot": "mainhand"
         }
     ],
+    "material_indication": {
+        "flexibility": 2,
+        "hardness": 2,
+        "durability": 1
+    },
     "draw_time": [
         {
             "value": "0.75",
