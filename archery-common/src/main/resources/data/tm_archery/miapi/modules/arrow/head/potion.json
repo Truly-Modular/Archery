@@ -51,7 +51,7 @@
     ],
     "inscribe_on_craft": "potion",
     "replace_projectile": "potion",
-    "priority": 3,
+    "priority": 1,
     "attributes": [
         {
             "attribute": "miapi:generic.projectile_damage",
