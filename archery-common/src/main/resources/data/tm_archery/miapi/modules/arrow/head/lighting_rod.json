@@ -51,7 +51,7 @@
     ],
     "allowed_material": {
         "allowedMaterials": [
-            "miapi:custom/lingering_potion"
+            "miapi:custom/lightning_rod"
         ],
         "cost": 1
     }

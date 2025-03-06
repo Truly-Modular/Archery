@@ -1,5 +1,5 @@
 {
-    "archery:bow/handle/arrow_holder": {
+    "tm_archery:bow/handle/arrow_holder": {
         "condition": {
             "type": "other_module",
             "condition": {

@@ -1,5 +1,5 @@
 {
-    "archery:arrow/head/explosive": {
+    "tm_archery:arrow/head/explosive": {
         "condition": {
             "type": "material",
             "material": "miapi:custom/tnt"

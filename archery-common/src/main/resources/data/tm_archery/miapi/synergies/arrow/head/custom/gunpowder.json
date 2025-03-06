@@ -1,5 +1,5 @@
 {
-    "archery:arrow/head/explosive": {
+    "tm_archery:arrow/head/explosive": {
         "condition": {
             "type": "material",
             "material": "miapi:custom/gunpowder"
@@ -7,7 +7,9 @@
         "replace": {
             "explosion_projectile": {
                 "destroyBlocks": false,
-                "strength": 0.8
+                "strength": 2.0,
+                "entityMaxDamage": 5,
+                "entityRadius": 2.0
             },
             "model": {
                 "path": "miapi:models/item/arrow/head/normal/gunpowder.json",

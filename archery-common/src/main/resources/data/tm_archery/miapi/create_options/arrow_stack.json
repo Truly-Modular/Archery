@@ -1,5 +1,5 @@
 {
-    "module": "archery:arrow/shaft/normal",
+    "module": "tm_archery:arrow/shaft/normal",
     "translation": "miapi.create_item.arrow_stack",
     "count": 64,
     "priority":-12

@@ -1,5 +1,5 @@
 {
-    "archery:arrow/head/potion": {
+    "tm_archery:arrow/head/potion": {
         "condition": {
             "type": "material",
             "material": "miapi:custom/splash_potion"

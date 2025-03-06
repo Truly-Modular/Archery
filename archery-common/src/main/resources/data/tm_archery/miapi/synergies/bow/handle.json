@@ -1,5 +1,5 @@
 {
-    "archery:bow/handle/normal": {
+    "tm_archery:bow/handle/normal": {
         "condition": {
             "type": "other_module",
             "condition": {

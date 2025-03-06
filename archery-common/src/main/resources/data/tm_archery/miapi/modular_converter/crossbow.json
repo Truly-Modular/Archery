@@ -1,18 +1,18 @@
 {
     "minecraft:crossbow": {
-        "key": "archery:crossbow/stock/normal",
+        "key": "tm_archery:crossbow/stock/normal",
         "data": {
             "miapi:material": "miapi:wood/wood"
         },
         "child": {
             "arms": {
-                "key": "archery:crossbow/arms/normal",
+                "key": "tm_archery:crossbow/arms/normal",
                 "data": {
                     "miapi:material": "miapi:wood/wood"
                 },
                 "child": {
                     "string": {
-                        "key": "archery:crossbow/string/normal",
+                        "key": "tm_archery:crossbow/string/normal",
                         "data": {
                             "miapi:material": "miapi:rope/string"
                         }
@@ -20,7 +20,7 @@
                 }
             },
             "attachment": {
-                "key": "archery:crossbow/attachments/styrup",
+                "key": "tm_archery:crossbow/attachments/styrup",
                 "data": {
                     "miapi:material": "miapi:metal/iron"
                 }

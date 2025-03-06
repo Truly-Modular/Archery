@@ -1,5 +1,5 @@
 {
-    "module": "archery:bow/handle/normal",
+    "module": "tm_archery:bow/handle/normal",
     "translation": "miapi.create_item.bow",
     "priority":-11
 }

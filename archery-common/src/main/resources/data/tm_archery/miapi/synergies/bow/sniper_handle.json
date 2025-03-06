@@ -1,5 +1,5 @@
 {
-    "archery:bow/handle/sniper": {
+    "tm_archery:bow/handle/sniper": {
         "condition": {
             "type": "other_module",
             "condition": {
