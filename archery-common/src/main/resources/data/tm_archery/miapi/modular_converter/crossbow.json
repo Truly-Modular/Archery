@@ -19,7 +19,7 @@
                     }
                 }
             },
-            "attachment": {
+            "attachments": {
                 "key": "tm_archery:crossbow/attachments/styrup",
                 "data": {
                     "miapi:material": "miapi:metal/iron"

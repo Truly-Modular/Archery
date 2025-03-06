@@ -13,7 +13,8 @@
         },
         "replace": {
             "display_name": "miapi.module.tm_archery.crossbow.stock.normal.name",
-            "item_id": "miapi:modular_crossbow_part"
+            "item_id": "miapi:modular_crossbow_part",
+            "assume_item_id": "minecraft:crossbow"
         }
     }
 }

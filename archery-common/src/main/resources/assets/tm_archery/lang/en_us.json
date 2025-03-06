@@ -44,6 +44,7 @@
 
     "miapi.slot.crossbow_stave.name": "Empty Crossbow Stave Slot",
     "miapi.slot.crossbow_front_attachment.name": "Empty Front Attachment Slot",
+    "miapi.slot.crossbow_attachment.name": "Empty Attachments Stave Slot",
     "miapi.slot.crossbow_string.name": "Empty String Slot",
 
     "miapi.module.tm_archery.arrow.head.normal": "Arrow Head",

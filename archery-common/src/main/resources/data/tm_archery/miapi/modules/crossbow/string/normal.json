@@ -73,5 +73,6 @@
     },
     "tag": [
         "crossbow_string"
-    ]
+    ],
+    "assume_item_id": "minecraft:crossbow"
 }
