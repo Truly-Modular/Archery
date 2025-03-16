@@ -27,6 +27,7 @@
         "arrow"
     ],
     "priority": 8,
+    "allowed_in_loot": "false",
     "allowed_in_slots": [
         "arrow_head"
     ],

@@ -6,6 +6,7 @@
         "arrow_head"
     ],
     "priority": 5,
+    "allowed_in_loot": "false",
     "attributes": [
         {
             "attribute": "miapi:generic.projectile_damage",
