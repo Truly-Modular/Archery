@@ -1,16 +1,17 @@
 {
     "type": "tag",
-    "bow_arms": {
+    "tag": "bow_arms",
+    "condition": {
+        "type": "not",
         "condition": {
-            "type": "not",
+            "type": "other_module",
             "condition": {
-                "type": "other_module",
-                "condition": {
-                    "type": "tag",
-                    "tag": "bow_string"
-                }
+                "type": "tag",
+                "tag": "bow_string"
             }
-        },
+        }
+    },
+    "properties": {
         "replace": {
             "display_name": "miapi.module.tm_archery.bow.handle.normal.name",
             "item_id": "miapi:modular_bow_part"

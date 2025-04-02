@@ -1,16 +1,17 @@
 {
     "type": "tag",
-    "crossbow_arms": {
+    "tag": "crossbow_arms",
+    "condition": {
+        "type": "not",
         "condition": {
-            "type": "not",
+            "type": "other_module",
             "condition": {
-                "type": "other_module",
-                "condition": {
-                    "type": "tag",
-                    "tag": "crossbow_string"
-                }
+                "type": "tag",
+                "tag": "crossbow_string"
             }
-        },
+        }
+    },
+    "properties": {
         "replace": {
             "display_name": "miapi.module.tm_archery.crossbow.stock.normal.name",
             "item_id": "miapi:modular_crossbow_part",

@@ -87,5 +87,5 @@
         "cost": 2
     },
     "display_name": "miapi.module.tm_archery.crossbow.arms.short.name",
-    "item_id": "miapi:modular_short_crossbow"
+    "item_id": "miapi:modular_small_crossbow"
 }

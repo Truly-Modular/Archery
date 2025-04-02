@@ -1,13 +1,14 @@
 {
     "type": "tag",
-    "arrow_head": {
+    "tag": "arrow_head",
+    "condition": {
+        "type": "other_module",
         "condition": {
-            "type": "other_module",
-            "condition": {
-                "type": "tag",
-                "tag": "arrow_tail"
-            }
-        },
+            "type": "tag",
+            "tag": "arrow_tail"
+        }
+    },
+    "properties": {
         "replace": {
             "display_name": "miapi.modular_arrow",
             "item_id": "miapi:modular_arrow"

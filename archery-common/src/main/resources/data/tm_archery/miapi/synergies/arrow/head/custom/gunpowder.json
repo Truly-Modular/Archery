@@ -1,9 +1,11 @@
 {
-    "tm_archery:arrow/head/explosive": {
-        "condition": {
-            "type": "material",
-            "material": "miapi:custom/gunpowder"
-        },
+    "type": "module",
+    "module": "tm_archery:arrow/head/explosive",
+    "condition": {
+        "type": "material",
+        "material": "miapi:custom/gunpowder"
+    },
+    "properties": {
         "replace": {
             "explosion_projectile": {
                 "destroyBlocks": false,

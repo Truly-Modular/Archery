@@ -1,9 +1,11 @@
 {
-    "tm_archery:arrow/head/potion": {
-        "condition": {
-            "type": "material",
-            "material": "miapi:custom/lingering_potion"
-        },
+    "type": "module",
+    "module": "tm_archery:arrow/head/potion",
+    "condition": {
+        "type": "material",
+        "material": "miapi:custom/lingering_potion"
+    },
+    "properties": {
         "replace": {
             "inscribe_on_craft": "POTION",
             "replace_projectile": "POTION",

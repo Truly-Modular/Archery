@@ -1,12 +1,14 @@
 {
-    "tm_archery:bow/handle/arrow_holder": {
+    "type": "module",
+    "module": "tm_archery:bow/handle/arrow_holder",
+    "condition": {
+        "type": "other_module",
         "condition": {
-            "type": "other_module",
-            "condition": {
-                "type": "tag",
-                "tag": "string_long"
-            }
-        },
+            "type": "tag",
+            "tag": "string_long"
+        }
+    },
+    "properties": {
         "replace": {
             "model": [
                 {

@@ -1,12 +1,14 @@
 {
-    "tm_archery:bow/string/normal": {
+    "type": "module",
+    "module": "tm_archery:bow/string/normal",
+    "condition": {
+        "type": "other_module",
         "condition": {
-            "type": "other_module",
-            "condition": {
-                "type": "tag",
-                "tag": "string_long"
-            }
-        },
+            "type": "tag",
+            "tag": "string_long"
+        }
+    },
+    "properties": {
         "replace": {
             "model": {
                 "path": "miapi:models/item/bow/string/large/[material.texture].json",

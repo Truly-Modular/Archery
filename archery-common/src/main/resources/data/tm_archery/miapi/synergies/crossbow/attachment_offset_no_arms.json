@@ -1,16 +1,17 @@
 {
     "type": "tag",
-    "crossbow_stock": {
+    "tag": "crossbow_stock",
+    "condition": {
+        "type": "not",
         "condition": {
-            "type": "not",
+            "type": "other_module",
             "condition": {
-                "type": "other_module",
-                "condition": {
-                    "type": "tag",
-                    "tag": "crossbow_arms"
-                }
+                "type": "tag",
+                "tag": "crossbow_arms"
             }
-        },
+        }
+    },
+    "properties": {
         "replace": {
             "slots": {
                 "arms": {
