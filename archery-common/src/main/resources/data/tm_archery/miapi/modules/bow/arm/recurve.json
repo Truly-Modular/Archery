@@ -67,24 +67,24 @@
     "attributes": [
         {
             "attribute": "miapi:generic.projectile_speed",
-            "value": "( [material.hardness] * 2 + [material.flexibility] ) / 9 - 1",
+            "value": "( [material.hardness] * 2 + [material.flexibility] ) / 9 - 0.5",
             "operation": "+",
             "slot": "mainhand"
         },
         {
             "attribute": "miapi:generic.projectile_speed",
-            "value": "0.2",
+            "value": "0.35",
             "operation": "**",
             "slot": "mainhand"
         }
     ],
     "draw_time": [
         {
-            "value": "0.2",
+            "value": "0.4",
             "operation": "**"
         },
         {
-            "value": "0.8 + [material.hardness]/15",
+            "value": "1.0 + [material.hardness]/15",
             "operation": "+"
         }
     ],
