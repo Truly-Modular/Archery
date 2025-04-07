@@ -102,6 +102,23 @@
         "crossbow_stock_magazine"
     ],
     "model_transform": {
+        "ground": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "translation": {
+                "x": 0,
+                "y": 2,
+                "z": 0
+            },
+            "scale": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 0.5
+            }
+        },
         "thirdperson_righthand": {
             "rotation": [
                 -90,
@@ -173,7 +190,10 @@
     },
     "enchantments": {
         "allowed": [
-            "minecraft:enchantable/crossbow"
+            "minecraft:enchantable/crossbow",
+            "minecraft:enchantable/durability",
+            "minecraft:enchantable/equippable",
+            "minecraft:enchantable/vanishing"
         ]
     },
     "allowed_material": {
