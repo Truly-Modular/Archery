@@ -1,3 +1,3 @@
-## v2.0 (1.20.1)
+## v2.0 (1.21)
 - rebalanced bows, crossbows, arrows
 - reworked draw time
