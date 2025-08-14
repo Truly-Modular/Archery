@@ -208,5 +208,6 @@
         ],
         "cost": 2
     },
+    "display_name": "miapi.module.tm_archery.crossbow.stock.magazine.name",
     "item_id": "miapi:modular_crossbow_part"
 }
