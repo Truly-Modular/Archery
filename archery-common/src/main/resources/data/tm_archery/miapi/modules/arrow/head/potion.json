@@ -5,19 +5,19 @@
             "color_provider": "model",
             "transform": {
                 "rotation": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
                 },
                 "translation": {
                     "x": -0.01,
                     "y": -0.01,
-                    "z": 0.0
+                    "z": 0
                 },
                 "scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
                 }
             }
         },
@@ -26,27 +26,24 @@
             "color_provider": "potion",
             "transform": {
                 "rotation": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
                 },
                 "translation": {
                     "x": -0.01,
                     "y": -0.01,
-                    "z": 0.0
+                    "z": 0
                 },
                 "scale": {
-                    "x": 1.0,
-                    "y": 1.0,
-                    "z": 1.0
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
                 }
             }
         }
     ],
     "allowed_in_slots": [
-        "arrow_head"
-    ],
-    "tag": [
         "arrow_head"
     ],
     "inscribe_on_craft": "potion",
@@ -80,5 +77,8 @@
             "miapi:custom/lingering_potion"
         ],
         "cost": 1
-    }
+    },
+    "module_tag": [
+        "arrow_head"
+    ]
 }

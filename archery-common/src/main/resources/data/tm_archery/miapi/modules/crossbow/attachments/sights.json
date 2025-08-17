@@ -21,12 +21,6 @@
     },
     "repair_priority": 0,
     "priority": 1,
-    "material_property": [
-        "default",
-        "handheld",
-        "crossbow",
-        "crossbow_attachment"
-    ],
     "allowed_in_slots": [
         "crossbow-attachments"
     ],
@@ -50,5 +44,11 @@
             "operation": "+",
             "slot": "mainhand"
         }
+    ],
+    "module_tag": [
+        "default",
+        "handheld",
+        "crossbow",
+        "crossbow_attachment"
     ]
 }

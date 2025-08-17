@@ -42,11 +42,6 @@
         }
     ],
     "repair_priority": 0,
-    "material_property": [
-        "default",
-        "handheld",
-        "crossbow"
-    ],
     "allowed_in_slots": [
         "crossbow_string"
     ],
@@ -71,8 +66,11 @@
         ],
         "cost": 3
     },
-    "tag": [
+    "assume_item_id": "minecraft:crossbow",
+    "module_tag": [
+        "default",
+        "handheld",
+        "crossbow",
         "crossbow_string"
-    ],
-    "assume_item_id": "minecraft:crossbow"
+    ]
 }

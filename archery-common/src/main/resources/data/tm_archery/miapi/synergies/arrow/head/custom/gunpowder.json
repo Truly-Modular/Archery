@@ -9,9 +9,9 @@
         "replace": {
             "explosion_projectile": {
                 "destroyBlocks": false,
-                "strength": 2.0,
+                "strength": 2,
                 "entityMaxDamage": 5,
-                "entityRadius": 2.0
+                "entityRadius": 2
             },
             "model": {
                 "path": "miapi:models/item/arrow/head/normal/gunpowder.json",

@@ -21,17 +21,8 @@
     },
     "priority": 3,
     "repair_priority": 1,
-    "material_property": [
-        "default",
-        "handheld",
-        "bow"
-    ],
     "allowed_in_slots": [
         "bow_arm"
-    ],
-    "tag": [
-        "bow_arms",
-        "string_long"
     ],
     "slots": {
         "string": {
@@ -106,5 +97,12 @@
         "cost": 2
     },
     "item_id": "miapi:modular_large_bow",
-    "display_name": "miapi.module.tm_archery.bow.arm.long.name"
+    "display_name": "miapi.module.tm_archery.bow.arm.long.name",
+    "module_tag": [
+        "default",
+        "handheld",
+        "bow",
+        "bow_arms",
+        "string_long"
+    ]
 }

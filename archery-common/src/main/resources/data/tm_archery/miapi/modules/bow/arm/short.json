@@ -21,18 +21,9 @@
     },
     "priority": 0,
     "repair_priority": 1,
-    "material_property": [
-        "default",
-        "handheld",
-        "bow"
-    ],
     "better_combat_config": "bettercombat:bow_two_handed_light",
     "allowed_in_slots": [
         "bow_arm"
-    ],
-    "tag": [
-        "bow_arms",
-        "string_normal"
     ],
     "slots": {
         "string": {
@@ -100,5 +91,12 @@
         "cost": 2
     },
     "item_id": "miapi:modular_small_bow",
-    "display_name": "miapi.module.tm_archery.bow.arm.short.name"
+    "display_name": "miapi.module.tm_archery.bow.arm.short.name",
+    "module_tag": [
+        "default",
+        "handheld",
+        "bow",
+        "bow_arms",
+        "string_normal"
+    ]
 }

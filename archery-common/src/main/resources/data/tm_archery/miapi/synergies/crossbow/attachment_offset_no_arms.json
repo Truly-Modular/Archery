@@ -63,5 +63,8 @@
                 }
             }
         }
-    }
+    },
+    "module_tag": [
+        "crossbow_stock"
+    ]
 }

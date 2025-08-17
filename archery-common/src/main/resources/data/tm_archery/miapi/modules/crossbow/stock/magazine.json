@@ -21,11 +21,6 @@
     },
     "repair_priority": 0,
     "priority": 2,
-    "material_property": [
-        "default",
-        "handheld",
-        "crossbow"
-    ],
     "better_combat_config": "bettercombat:crossbow_two_handed_light",
     "allowed_in_slots": [
         "crossbow"
@@ -97,10 +92,6 @@
             }
         }
     },
-    "tag": [
-        "crossbow_stock",
-        "crossbow_stock_magazine"
-    ],
     "model_transform": {
         "ground": {
             "rotation": {
@@ -209,5 +200,12 @@
         "cost": 2
     },
     "display_name": "miapi.module.tm_archery.crossbow.stock.magazine.name",
-    "item_id": "miapi:modular_crossbow_part"
+    "item_id": "miapi:modular_crossbow_part",
+    "module_tag": [
+        "default",
+        "handheld",
+        "crossbow",
+        "crossbow_stock",
+        "crossbow_stock_magazine"
+    ]
 }

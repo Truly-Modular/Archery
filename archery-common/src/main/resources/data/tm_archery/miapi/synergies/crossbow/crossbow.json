@@ -17,5 +17,8 @@
             "item_id": "miapi:modular_crossbow_part",
             "assume_item_id": "minecraft:crossbow"
         }
-    }
+    },
+    "module_tag": [
+        "crossbow_arms"
+    ]
 }

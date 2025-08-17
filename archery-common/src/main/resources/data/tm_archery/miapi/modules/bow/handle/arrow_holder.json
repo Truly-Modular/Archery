@@ -63,11 +63,6 @@
         }
     ],
     "repair_priority": 0,
-    "material_property": [
-        "default",
-        "handheld",
-        "bow"
-    ],
     "allowed_in_slots": [
         "bow"
     ],
@@ -222,5 +217,10 @@
         ],
         "cost": 1
     },
-    "item_id": "miapi:modular_bow_part"
+    "item_id": "miapi:modular_bow_part",
+    "module_tag": [
+        "default",
+        "handheld",
+        "bow"
+    ]
 }

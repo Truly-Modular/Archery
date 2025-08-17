@@ -1,5 +1,5 @@
 {
     "module": "tm_archery:crossbow/stock/normal",
     "translation": "miapi.create_item.crossbow",
-    "priority":-10
+    "priority": -10
 }

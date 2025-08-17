@@ -20,11 +20,6 @@
         }
     },
     "repair_priority": 0,
-    "material_property": [
-        "default",
-        "handheld",
-        "bow"
-    ],
     "allowed_in_slots": [
         "bow_string"
     ],
@@ -50,7 +45,10 @@
         ],
         "cost": 3
     },
-    "tag": [
+    "module_tag": [
+        "default",
+        "handheld",
+        "bow",
         "bow_string"
     ]
 }

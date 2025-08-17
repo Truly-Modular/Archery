@@ -20,15 +20,8 @@
             }
         }
     },
-    "material_property": [
-        "default",
-        "arrow"
-    ],
     "priority": 0,
     "allowed_in_slots": [
-        "arrow_head"
-    ],
-    "tag": [
         "arrow_head"
     ],
     "attributes": [
@@ -69,5 +62,10 @@
             "wool"
         ],
         "cost": 0.1111
-    }
+    },
+    "module_tag": [
+        "default",
+        "arrow",
+        "arrow_head"
+    ]
 }

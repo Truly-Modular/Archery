@@ -20,10 +20,6 @@
             }
         }
     },
-    "material_property": [
-        "default",
-        "arrow"
-    ],
     "allowed_in_slots": [
         "arrow_tail"
     ],
@@ -40,9 +36,6 @@
     },
     "water_drag": "0.99",
     "air_drag": "0.90",
-    "tag": [
-        "arrow_tail"
-    ],
     "attributes": [
         {
             "attribute": "miapi:generic.projectile_speed",
@@ -61,5 +54,10 @@
         "flexibility": 1,
         "density": -1,
         "durability": 1
-    }
+    },
+    "module_tag": [
+        "default",
+        "arrow",
+        "arrow_tail"
+    ]
 }

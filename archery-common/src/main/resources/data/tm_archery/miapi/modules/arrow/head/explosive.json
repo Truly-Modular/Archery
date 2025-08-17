@@ -2,9 +2,6 @@
     "allowed_in_slots": [
         "arrow_head"
     ],
-    "tag": [
-        "arrow_head"
-    ],
     "priority": 2,
     "allowed_in_loot": "false",
     "attributes": [
@@ -34,5 +31,8 @@
             "miapi:custom/gunpowder"
         ],
         "cost": 1
-    }
+    },
+    "module_tag": [
+        "arrow_head"
+    ]
 }

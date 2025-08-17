@@ -21,18 +21,8 @@
     },
     "priority": 1,
     "repair_priority": 1,
-    "material_property": [
-        "default",
-        "handheld",
-        "crossbow"
-    ],
     "allowed_in_slots": [
         "crossbow_arm"
-    ],
-    "tag": [
-        "crossbow_arms",
-        "crossbow_arms_short",
-        "string_normal"
     ],
     "slots": {
         "string": {
@@ -87,5 +77,13 @@
         "cost": 2
     },
     "display_name": "miapi.module.tm_archery.crossbow.arms.short.name",
-    "item_id": "miapi:modular_small_crossbow"
+    "item_id": "miapi:modular_small_crossbow",
+    "module_tag": [
+        "default",
+        "handheld",
+        "crossbow",
+        "crossbow_arms",
+        "crossbow_arms_short",
+        "string_normal"
+    ]
 }

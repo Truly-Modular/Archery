@@ -1,5 +1,5 @@
 {
     "module": "tm_archery:arrow/shaft/normal",
     "translation": "miapi.create_item.arrow_one",
-    "priority":-13
+    "priority": -13
 }
