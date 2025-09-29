@@ -221,6 +221,7 @@
     "module_tag": [
         "default",
         "handheld",
-        "bow"
+        "bow",
+        "bow_handle"
     ]
 }
