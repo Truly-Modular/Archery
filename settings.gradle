@@ -11,5 +11,5 @@ pluginManagement {
 rootProject.name = 'archery'
 
 include("archery-common")
-include("archery-fabric")
-include("archery-forge")
+//include("archery-fabric")
+//include("archery-forge")
