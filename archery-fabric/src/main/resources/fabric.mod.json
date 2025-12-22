@@ -19,7 +19,11 @@
   "license": "CC-BY-NC-4.0",
   "icon": "icon.png",
   "environment": "*",
-  "entrypoints": {},
+  "entrypoints": {
+    "main": [
+      "smartin.archery.fabric.ArcheryFabric"
+    ]
+  },
   "mixins": [
     "tm_archery.mixins.json",
     "tm_archery-common.mixins.json"
