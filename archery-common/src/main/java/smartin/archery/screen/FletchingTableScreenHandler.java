@@ -19,10 +19,7 @@ import smartin.miapi.modules.ItemModule;
 import smartin.miapi.modules.properties.slot.SlotProperty;
 import smartin.miapi.registries.RegistryInventory;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class FletchingTableScreenHandler extends AbstractContainerMenu {
 
@@ -34,6 +31,7 @@ public class FletchingTableScreenHandler extends AbstractContainerMenu {
     public ItemModule shaftModule = RegistryInventory.ITEM_MODULE_MIAPI_REGISTRY.get(Miapi.id("tm_archery:arrow/shaft/normal"));
     public ItemModule headModule = RegistryInventory.ITEM_MODULE_MIAPI_REGISTRY.get(Miapi.id("tm_archery:arrow/head/normal"));
     public ItemModule tailModule = RegistryInventory.ITEM_MODULE_MIAPI_REGISTRY.get(Miapi.id("tm_archery:arrow/tail/fletching"));
+    private final Player player;
 
 
     private final Container container;
@@ -52,6 +50,7 @@ public class FletchingTableScreenHandler extends AbstractContainerMenu {
             Container container
     ) {
         super(menuType, containerId);
+        player = playerInventory.player;
         checkContainerSize(container, CONTAINER_SIZE);
         this.container = container;
 
@@ -84,9 +83,13 @@ public class FletchingTableScreenHandler extends AbstractContainerMenu {
 
             @Override
             public void onTake(Player player, ItemStack stack) {
-                super.onTake(player, stack);
                 craftAction();
+                super.onTake(player, stack);
                 preview();
+            }
+
+            public void set(ItemStack itemStack) {
+                super.set(itemStack);
             }
         });
 
@@ -126,6 +129,7 @@ public class FletchingTableScreenHandler extends AbstractContainerMenu {
     protected void preview() {
         ensureActions();
         ItemStack working = new ItemStack(RegistryInventory.modularItem);
+        working.setCount(count);
 
         for (int i = 0; i < craftActions.size(); i++) {
             CraftAction action = craftActions.get(i);
@@ -158,10 +162,15 @@ public class FletchingTableScreenHandler extends AbstractContainerMenu {
         int maxAvailableHead = calculateMaxAvailable(headModule, 1);
         int maxAvailableTail = calculateMaxAvailable(tailModule, 2);
 
-        count = Math.min(1, Math.min(
-                maxAvailableHead,
-                Math.min(maxAvailableShaft, maxAvailableTail)
-        ));
+        int[] values = { maxAvailableHead, maxAvailableShaft, maxAvailableTail };
+
+        int min = Arrays.stream(values)
+                .filter(v -> v > 0)
+                .min()
+                .orElse(64);
+
+        count = Math.clamp(min, 1, 64);
+
     }
 
     /**
@@ -202,7 +211,7 @@ public class FletchingTableScreenHandler extends AbstractContainerMenu {
             return 0;
         }
 
-        return (int) Math.floor(cost / itemValue);
+        return (int) Math.floor(itemValue / cost * stack.getCount());
     }
 
     protected void ensureActions() {
@@ -228,7 +237,7 @@ public class FletchingTableScreenHandler extends AbstractContainerMenu {
                 base,
                 new SlotProperty.ModuleSlot(),
                 module,
-                null,
+                player,
                 null,
                 new HashMap<>(),
                 null
@@ -246,6 +255,7 @@ public class FletchingTableScreenHandler extends AbstractContainerMenu {
         ensureActions();
 
         ItemStack working = new ItemStack(RegistryInventory.modularItem);
+        working.setCount(count);
 
         if (working.isEmpty()) return;
 
@@ -284,10 +294,12 @@ public class FletchingTableScreenHandler extends AbstractContainerMenu {
 
             if (index < CONTAINER_SIZE) {
                 if (!this.moveItemStackTo(stack, CONTAINER_SIZE, this.slots.size(), true)) {
+                    preview();
                     return ItemStack.EMPTY;
                 }
             } else {
                 if (!this.moveItemStackTo(stack, 0, INPUT_SLOTS, false)) {
+                    preview();
                     return ItemStack.EMPTY;
                 }
             }
@@ -298,7 +310,7 @@ public class FletchingTableScreenHandler extends AbstractContainerMenu {
                 slot.setChanged();
             }
         }
-
+        preview();
         return original;
     }
 }

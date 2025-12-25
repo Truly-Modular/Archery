@@ -53,7 +53,7 @@
             "miapi:custom/book",
             "miapi:custom/nametag"
         ],
-        "cost": 0.1111
+        "cost": 1.0
     },
     "module_tag": [
         "default",

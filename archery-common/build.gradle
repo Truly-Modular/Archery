@@ -32,7 +32,7 @@ dependencies {
     // Remove the next line if you don't want to depend on the API
     modApi "dev.architectury:architectury:${rootProject.architectury_version}"
 
-    implementation "com.github.Truly-Modular.Modular-Item-API:Truly-Modular-miapi-common:${rootProject.miapi_version}"
+    modImplementation "com.github.Truly-Modular.Modular-Item-API:Truly-Modular-miapi-common:${rootProject.miapi_version}"
 }
 
 architectury {
