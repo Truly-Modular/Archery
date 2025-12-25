@@ -16,10 +16,6 @@ repositories {
     maven { url 'https://maven.theillusivec4.top/' }
     maven { url 'https://www.cursemaven.com' }
     maven {
-        url 'http://trulymodular.dedyn.io/maven'
-        allowInsecureProtocol = true
-    }
-    maven {
         name = 'Modrinth'
         url = 'https://api.modrinth.com/maven'
         content {
@@ -41,7 +37,7 @@ dependencies {
     // Remove the next line if you don't want to depend on the API
     modApi "dev.architectury:architectury-forge:${rootProject.architectury_version}"
 
-    modApi("com.Truly-Modular.Modular-Item-API:Truly-Modular-miapi-forge:${rootProject.miapi_version}-${rootProject.minecraft_version}")
+    implementation "com.github.Truly-Modular.Modular-Item-API:Truly-Modular-miapi-forge:${rootProject.miapi_version}"
 
     common(project(path: ":archery-common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":archery-common", configuration: "transformProductionForge")) { transitive = false }
