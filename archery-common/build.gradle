@@ -23,6 +23,7 @@ repositories {
             includeGroup 'maven.modrinth'
         }
     }
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
