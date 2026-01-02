@@ -1,3 +1,2 @@
-## v2.0 (1.21)
-- rebalanced bows, crossbows, arrows
-- reworked draw time
+## v2.1 (1.21)
+- added fletching table

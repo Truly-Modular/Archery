@@ -1,5 +1,6 @@
 package smartin.archery.screen;
 
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.Container;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
@@ -11,30 +12,30 @@ import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
 import smartin.archery.Archery;
 import smartin.miapi.Miapi;
-import smartin.miapi.craft.CraftAction;
-import smartin.miapi.material.AllowedMaterial;
-import smartin.miapi.material.MaterialProperty;
-import smartin.miapi.material.base.Material;
+import smartin.miapi.item.modular.ModularItem;
 import smartin.miapi.modules.ItemModule;
-import smartin.miapi.modules.properties.slot.SlotProperty;
 import smartin.miapi.registries.RegistryInventory;
 
-import java.util.*;
-
 public class FletchingTableScreenHandler extends AbstractContainerMenu {
+    public static final int ARROW_INPUT_SLOT = 0;
+    public static final int SHAFT_SLOT = 1;
+    public static final int HEAD_SLOT = 2;
+    public static final int TAIL_SLOT = 3;
+    public static final int OUTPUT_SLOT = 4;
 
-    public static final int INPUT_SLOTS = 3;
-    public static final int OUTPUT_SLOT = 3;
-    public static final int CONTAINER_SIZE = 4;
-    private final List<CraftAction> craftActions = new ArrayList<>(3);
-    public int count = 0;
-    public ItemModule shaftModule = RegistryInventory.ITEM_MODULE_MIAPI_REGISTRY.get(Miapi.id("tm_archery:arrow/shaft/normal"));
-    public ItemModule headModule = RegistryInventory.ITEM_MODULE_MIAPI_REGISTRY.get(Miapi.id("tm_archery:arrow/head/normal"));
-    public ItemModule tailModule = RegistryInventory.ITEM_MODULE_MIAPI_REGISTRY.get(Miapi.id("tm_archery:arrow/tail/fletching"));
+    public static final int INPUT_SLOTS = 4;
+    public static final int CONTAINER_SIZE = 5;
+
+
     private final Player player;
-
-
     private final Container container;
+
+    public ItemModule shaftModule =
+            RegistryInventory.ITEM_MODULE_MIAPI_REGISTRY.get(Miapi.id("tm_archery:arrow/shaft/normal"));
+    public ItemModule headModule =
+            RegistryInventory.ITEM_MODULE_MIAPI_REGISTRY.get(Miapi.id("tm_archery:arrow/head/normal"));
+    public ItemModule tailModule =
+            RegistryInventory.ITEM_MODULE_MIAPI_REGISTRY.get(Miapi.id("tm_archery:arrow/tail/fletching"));
 
     public FletchingTableScreenHandler(
             int containerId,
@@ -50,32 +51,53 @@ public class FletchingTableScreenHandler extends AbstractContainerMenu {
             Container container
     ) {
         super(menuType, containerId);
-        player = playerInventory.player;
-        checkContainerSize(container, CONTAINER_SIZE);
+        this.player = playerInventory.player;
         this.container = container;
 
-        // --- Input slots (0–2) ---
-        this.addSlot(new Slot(container, 0, 44, 35) {
+        checkContainerSize(container, CONTAINER_SIZE);
+
+        this.addSlot(new Slot(container, ARROW_INPUT_SLOT, 28, 35) {
+            @Override
             public void set(ItemStack stack) {
                 super.set(stack);
                 slotsChanged(container);
             }
-        });
-        this.addSlot(new Slot(container, 1, 62, 35) {
-            public void set(ItemStack stack) {
-                super.set(stack);
-                slotsChanged(container);
+
+            @Override
+            public boolean mayPlace(ItemStack stack) {
+                return stack.is(ItemTags.ARROWS) || ModularItem.isModularItem(stack);
             }
         });
-        this.addSlot(new Slot(container, 2, 80, 35) {
+
+
+        // Input slots
+        this.addSlot(new Slot(container, SHAFT_SLOT, 65, 35) {
+            @Override
             public void set(ItemStack stack) {
                 super.set(stack);
                 slotsChanged(container);
             }
         });
 
-        // --- Output slot (3) ---
-        this.addSlot(new Slot(container, OUTPUT_SLOT, 134, 35) {
+        this.addSlot(new Slot(container, HEAD_SLOT, 65, 17) {
+            @Override
+            public void set(ItemStack stack) {
+                super.set(stack);
+                slotsChanged(container);
+            }
+        });
+
+        this.addSlot(new Slot(container, TAIL_SLOT, 65, 53) {
+            @Override
+            public void set(ItemStack stack) {
+                super.set(stack);
+                slotsChanged(container);
+            }
+        });
+
+
+        // Output slot
+        this.addSlot(new Slot(container, OUTPUT_SLOT, 124, 35) {
             @Override
             public boolean mayPlace(ItemStack stack) {
                 return false;
@@ -83,17 +105,13 @@ public class FletchingTableScreenHandler extends AbstractContainerMenu {
 
             @Override
             public void onTake(Player player, ItemStack stack) {
-                craftAction();
+                performCraft();
                 super.onTake(player, stack);
                 preview();
             }
-
-            public void set(ItemStack itemStack) {
-                super.set(itemStack);
-            }
         });
 
-        // --- Player inventory ---
+        // Player inventory
         for (int row = 0; row < 3; row++) {
             for (int col = 0; col < 9; col++) {
                 this.addSlot(new Slot(
@@ -105,7 +123,7 @@ public class FletchingTableScreenHandler extends AbstractContainerMenu {
             }
         }
 
-        // --- Hotbar ---
+        // Hotbar
         for (int col = 0; col < 9; col++) {
             this.addSlot(new Slot(
                     playerInventory,
@@ -116,167 +134,55 @@ public class FletchingTableScreenHandler extends AbstractContainerMenu {
         }
     }
 
+    private CraftActionPipelineArch buildPipeline() {
+        ItemStack arrowItem = null;
+        if (!container.getItem(0).isEmpty()) {
+            arrowItem = container.getItem(0);
+        }
+        return CraftActionPipelineArch.create(player)
+                .failureMode(CraftActionPipelineArch.FailureMode.NORMAL)
+                .allowEmptyModules(true)
+                .setAutoCount(true)
+                .baseItem(arrowItem)
+
+                // slot 0: shaft / base
+                .add(shaftModule.id(), 1, container)
+
+                // slot 1: head
+                .add("head", headModule.id(), 2, container)
+
+                // slot 2: tail
+                .add("shaft", tailModule.id(), 3, container);
+    }
+
+    protected void preview() {
+        CraftActionPipelineArch pipeline = buildPipeline();
+
+        ItemStack result = pipeline.preview();
+        if (result.isEmpty()) {
+            container.setItem(OUTPUT_SLOT, ItemStack.EMPTY);
+            return;
+        }
+
+        //result.setCount(pipeline.calculateMaxProduction());
+        container.setItem(OUTPUT_SLOT, result);
+    }
+
+    protected void performCraft() {
+        CraftActionPipelineArch pipeline = buildPipeline();
+        ItemStack result = pipeline.perform();
+        container.setItem(OUTPUT_SLOT, result);
+        ItemStack stack = container.getItem(ARROW_INPUT_SLOT).copy();
+        stack.setCount(stack.getCount() - result.getCount());
+        container.setItem(ARROW_INPUT_SLOT, stack);
+        container.setChanged();
+    }
+
     @Override
     public void slotsChanged(Container container) {
         super.slotsChanged(container);
         preview();
     }
-
-    /**
-     * Stub crafting logic.
-     * Replace with recipe lookup or custom logic later.
-     */
-    protected void preview() {
-        ensureActions();
-        ItemStack working = new ItemStack(RegistryInventory.modularItem);
-        working.setCount(count);
-
-        for (int i = 0; i < craftActions.size(); i++) {
-            CraftAction action = craftActions.get(i);
-            ItemStack input = container.getItem(i);
-
-            if (input.isEmpty()) continue;
-
-            action.setItem(working);
-            action.linkInventory(container, i);
-
-            if (!action.canPerform()) {
-                container.setItem(OUTPUT_SLOT, ItemStack.EMPTY);
-                return;
-            }
-            //ModuleInstance moduleInstance = action.slotLocation;
-
-            // preview-only execution
-            working = action.getPreview();
-            if (working.isEmpty()) {
-                container.setItem(OUTPUT_SLOT, ItemStack.EMPTY);
-                return;
-            }
-        }
-
-        container.setItem(OUTPUT_SLOT, working);
-    }
-
-    public void calculateMaxConsumption() {
-        int maxAvailableShaft = calculateMaxAvailable(shaftModule, 0);
-        int maxAvailableHead = calculateMaxAvailable(headModule, 1);
-        int maxAvailableTail = calculateMaxAvailable(tailModule, 2);
-
-        int[] values = { maxAvailableHead, maxAvailableShaft, maxAvailableTail };
-
-        int min = Arrays.stream(values)
-                .filter(v -> v > 0)
-                .min()
-                .orElse(64);
-
-        count = Math.clamp(min, 1, 64);
-
-    }
-
-    /**
-     * Calculates the maximum available consumption for a given module and container slot.
-     * Returns 0 if any required data is missing or invalid.
-     */
-    private int calculateMaxAvailable(ItemModule module, int slotIndex) {
-        if (module == null || container == null) {
-            return 0;
-        }
-
-        ItemStack stack = container.getItem(slotIndex);
-        if (stack == null || stack.isEmpty()) {
-            return 0;
-        }
-
-        // Resolve material
-        Material material = MaterialProperty.getMaterialFromIngredient(stack);
-        if (material == null) {
-            return 0;
-        }
-
-        double itemValue = material.getValueOfItem(stack);
-        if (itemValue <= 0) {
-            return 0;
-        }
-
-        // Resolve allowed material property
-        Optional<AllowedMaterial.AllowedMaterialData> allowedData =
-                AllowedMaterial.property.getData(module);
-
-        if (allowedData.isEmpty()) {
-            return 0;
-        }
-
-        Float cost = allowedData.get().cost;
-        if (cost != null && cost <= 0) {
-            return 0;
-        }
-
-        return (int) Math.floor(itemValue / cost * stack.getCount());
-    }
-
-    protected void ensureActions() {
-        calculateMaxConsumption();
-        if (!craftActions.isEmpty()) return;
-        //TODO: add a system to allow for choosing allowed modules
-        //TODO: add a system to allow for dynamic amount
-        ItemStack modular = new ItemStack(RegistryInventory.modularItem);
-        modular.setCount(count);
-
-        // Slot 0 → shaft / base
-        craftActions.add(getSimpleCraftAction(List.of(), shaftModule, modular));
-
-        // Slot 1 → head
-        craftActions.add(getSimpleCraftAction(List.of("head"), headModule, modular));
-
-        // Slot 2 → modifier (optional)
-        craftActions.add(getSimpleCraftAction(List.of("shaft"), tailModule, modular));
-    }
-
-    public CraftAction getSimpleCraftAction(List<String> slot, ItemModule module, ItemStack base) {
-        CraftAction action = new CraftAction(
-                base,
-                new SlotProperty.ModuleSlot(),
-                module,
-                player,
-                null,
-                new HashMap<>(),
-                null
-        );
-        action.slotLocation.clear();
-        action.slotLocation.addAll(slot);
-        return action;
-    }
-
-
-    /**
-     * Adjust inputs when output is taken.
-     */
-    protected void craftAction() {
-        ensureActions();
-
-        ItemStack working = new ItemStack(RegistryInventory.modularItem);
-        working.setCount(count);
-
-        if (working.isEmpty()) return;
-
-        for (int i = 0; i < craftActions.size(); i++) {
-            CraftAction action = craftActions.get(i);
-            ItemStack input = container.getItem(i);
-
-            if (input.isEmpty()) continue;
-
-            action.setItem(working);
-            action.linkInventory(container, i);
-
-            if (!action.canPerform()) {
-                return;
-            }
-
-            working = action.perform();
-        }
-        container.setChanged();
-    }
-
 
     @Override
     public boolean stillValid(Player player) {
@@ -294,12 +200,10 @@ public class FletchingTableScreenHandler extends AbstractContainerMenu {
 
             if (index < CONTAINER_SIZE) {
                 if (!this.moveItemStackTo(stack, CONTAINER_SIZE, this.slots.size(), true)) {
-                    preview();
                     return ItemStack.EMPTY;
                 }
             } else {
                 if (!this.moveItemStackTo(stack, 0, INPUT_SLOTS, false)) {
-                    preview();
                     return ItemStack.EMPTY;
                 }
             }
@@ -310,6 +214,7 @@ public class FletchingTableScreenHandler extends AbstractContainerMenu {
                 slot.setChanged();
             }
         }
+
         preview();
         return original;
     }
