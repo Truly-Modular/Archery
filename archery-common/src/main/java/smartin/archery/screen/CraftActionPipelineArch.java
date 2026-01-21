@@ -4,6 +4,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import org.joml.Math;
 import smartin.miapi.craft.CraftAction;
 import smartin.miapi.material.AllowedMaterial;
 import smartin.miapi.material.MaterialProperty;

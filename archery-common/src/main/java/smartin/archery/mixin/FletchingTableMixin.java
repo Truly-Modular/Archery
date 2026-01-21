@@ -14,6 +14,7 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+import smartin.archery.Archery;
 import smartin.archery.screen.FletchingTableScreenHandler;
 
 @Mixin(FletchingTableBlock.class)
@@ -30,11 +31,14 @@ public class FletchingTableMixin {
         if (level.isClientSide) {
             cir.setReturnValue(InteractionResult.SUCCESS);
         } else {
-            player.openMenu(new SimpleMenuProvider((i, arg3, arg4) -> {
-                return new FletchingTableScreenHandler(i,arg3);
-            }, CONTAINER_TITLE));
-            //player.awardStat(Stats.INTERACT_WITH_CRAFTING_TABLE);
-            cir.setReturnValue(InteractionResult.CONSUME);
+            if (Archery.CONFIG.enableFletchingTable) {
+                player.openMenu(new SimpleMenuProvider((i, arg3, arg4) -> {
+                    return new FletchingTableScreenHandler(i, arg3);
+                }, CONTAINER_TITLE));
+                //player.awardStat(Stats.INTERACT_WITH_CRAFTING_TABLE);
+                cir.setReturnValue(InteractionResult.CONSUME);
+
+            }
         }
     }
 }
