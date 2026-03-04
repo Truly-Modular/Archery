@@ -72,20 +72,8 @@
             }
         }
     },
-    "attributes": [
-        {
-            "attribute": "miapi:generic.projectile_speed",
-            "value": "-([material.flexibility]-3.0)/6",
-            "operation": "+",
-            "slot": "mainhand"
-        },
-        {
-            "attribute": "miapi:generic.projectile_accuracy",
-            "value": "([material.hardness]-3.0)/10",
-            "operation": "+",
-            "slot": "mainhand"
-        }
-    ],
+    "bow_speed": "([material.flexibility]-3.0)*15",
+    "bow_accuracy": "([material.hardness]-3.0)*10",
     "model_transform": {
         "fixed": {
             "rotation": {

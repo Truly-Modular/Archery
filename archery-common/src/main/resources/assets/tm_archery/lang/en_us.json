@@ -84,6 +84,15 @@
     "miapi.module.tm_archery.arrow.shaft.normal.description": "Shaft of an arrow, determines weight speed and impact of an Arrow",
     "miapi.module.tm_archery.arrow.shaft.normal.short_description": "The Shaft of an Arrow.",
 
+    "miapi.module.tm_archery.arrow.shaft.reinforced": "Reinforced Arrow Shaft",
+    "miapi.module.tm_archery.arrow.shaft.reinforced.name": "%s Reinforced Arrow Shaft",
+    "miapi.module.tm_archery.arrow.shaft.reinforced.description": "A strengthened arrow shaft designed for durability. Grants a chance for fired arrows to be recovered when the target dies.",
+    "miapi.module.tm_archery.arrow.shaft.reinforced.short_description": "Durable shaft that improves arrow recovery.",
+
+    "miapi.module.tm_archery.arrow.shaft.tension": "High Tension Arrow Shaft",
+    "miapi.module.tm_archery.arrow.shaft.tension.name": "%s High Tension Arrow Shaft",
+    "miapi.module.tm_archery.arrow.shaft.tension.description": "A tightly strung, high-tension shaft built for maximum force. Increases damage significantly at the cost of accuracy.",
+    "miapi.module.tm_archery.arrow.shaft.tension.short_description": "High damage, reduced accuracy.",
 
 
     "miapi.module.tm_archery.arrow.tail.fletching": "Arrow Fletching",
@@ -138,6 +147,16 @@
     "miapi.module.tm_archery.bow.string.normal.description": "String of a Bow",
     "miapi.module.tm_archery.bow.string.normal.short_description": "String of a Bow.",
 
+    "miapi.module.tm_archery.bow.string.netherite": "Metal Bow String",
+    "miapi.module.tm_archery.bow.string.netherite.name": "Metal %s Bow String",
+    "miapi.module.tm_archery.bow.string.netherite.description": "Thin metal string",
+    "miapi.module.tm_archery.bow.string.netherite.short_description": "Thin metal string.",
+
+    "miapi.module.tm_archery.bow.string.sinew": "Sinew String",
+    "miapi.module.tm_archery.bow.string.sinew.name": "Metal %s Bow String",
+    "miapi.module.tm_archery.bow.string.sinew.description": "Thin sinew from leather",
+    "miapi.module.tm_archery.bow.string.sinew.short_description": "Thin sinew from leather.",
+
     "miapi.module.tm_archery.crossbow.stock.normal": "Crossbow Stock",
     "miapi.module.tm_archery.crossbow.stock.normal.name": "%s Crossbow Stock",
     "miapi.module.tm_archery.crossbow.stock.normal.description": "The grip and shoulder support, essential for accurate aiming and comfortable handling",
@@ -166,6 +185,16 @@
     "miapi.module.tm_archery.crossbow.string.normal.name": "%s Crossbow String",
     "miapi.module.tm_archery.crossbow.string.normal.description": "The high-tension element that launches bolts with force and precision.",
     "miapi.module.tm_archery.crossbow.string.normal.short_description": "The high-tension element that launches bolts with force and precision.",
+
+    "miapi.module.tm_archery.crossbow.string.netherite": "Metal Crossbow String",
+    "miapi.module.tm_archery.crossbow.string.netherite.name": "Metal %s Crossbow String",
+    "miapi.module.tm_archery.crossbow.string.netherite.description": "The high-tension metal string replacing traditional fibre.",
+    "miapi.module.tm_archery.crossbow.string.netherite.short_description": "The high-tension metal string replacing traditional fibre.",
+
+    "miapi.module.tm_archery.crossbow.string.sinew": "Sinew String",
+    "miapi.module.tm_archery.crossbow.string.sinew.name": "%s Sinew String",
+    "miapi.module.tm_archery.crossbow.string.sinew.description": "String made from leather sinew.",
+    "miapi.module.tm_archery.crossbow.string.sinew.short_description": "String made from leather sinew.",
 
     "miapi.module.tm_archery.crossbow.attachments.magazine": "Magazine Attachments",
     "miapi.module.tm_archery.crossbow.attachments.magazine.description": "Allows to quickly shot multiple shots in quick succession.",

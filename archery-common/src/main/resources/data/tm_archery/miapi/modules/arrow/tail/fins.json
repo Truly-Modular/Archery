@@ -36,20 +36,8 @@
     },
     "water_drag": "0.99",
     "air_drag": "0.90",
-    "attributes": [
-        {
-            "attribute": "miapi:generic.projectile_speed",
-            "value": "( - [material.density] ) / 1 * 0 ",
-            "operation": "+",
-            "slot": "mainhand"
-        },
-        {
-            "attribute": "miapi:generic.projectile_accuracy",
-            "value": "[material.flexibility]/7 - 1",
-            "operation": "+",
-            "slot": "mainhand"
-        }
-    ],
+    "projectile_speed": "([material.density]-2)* - 15",
+    "projectile_accuracy": "( [material.hardness] -3) * 15",
     "material_indication": {
         "flexibility": 1,
         "density": -1,

@@ -1,6 +1,6 @@
 {
     "model": {
-        "path": "miapi:models/item/crossbow/attachments/sights/[material.texture].json",
+        "path": "miapi:models/item/bow/string/normal/[material.texture].json",
         "transform": {
             "rotation": {
                 "x": 0,
@@ -9,7 +9,7 @@
             },
             "translation": {
                 "x": 0,
-                "y": -0.01,
+                "y": 0,
                 "z": 0
             },
             "scale": {
@@ -20,28 +20,24 @@
         }
     },
     "repair_priority": 0,
-    "priority": 1,
     "allowed_in_slots": [
-        "crossbow-attachments"
+        "bow_string"
     ],
-    "durability": "[material.durability]* 0.1",
+    "bow_speed": "([material.flexibility]-5.8) * 15",
+    "bow_accuracy": "-50",
+    "draw_time": "-([material.hardness]-4) * 5",
+    "durability": "[material.flexibility]* 0.5",
     "allowed_material": {
         "allowedMaterials": [
-            "wood",
-            "metal",
-            "flint",
-            "bone",
-            "stone",
-            "crystal",
-            "glass"
+            "sinew"
         ],
         "cost": 1
     },
-    "bow_accuracy": "([material.hardness])*6",
     "module_tag": [
         "default",
         "handheld",
-        "crossbow",
-        "crossbow_attachment"
+        "bow",
+        "bow_string",
+        "bow_string_default"
     ]
 }

@@ -1,6 +1,6 @@
 {
-    "type": "module",
-    "module": "tm_archery:bow/string/normal",
+    "type": "tag",
+    "tag": "bow_string_default",
     "condition": {
         "type": "other_module",
         "condition": {

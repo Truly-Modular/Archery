@@ -19,6 +19,7 @@
             }
         }
     },
+    "bow_accuracy": "0",
     "repair_priority": 0,
     "priority": 1,
     "better_combat_config": "bettercombat:crossbow_two_handed_light",

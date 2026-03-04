@@ -28,18 +28,6 @@
     "allowed_in_loot": "false",
     "attributes": [
         {
-            "attribute": "miapi:generic.projectile_damage",
-            "value": "2",
-            "operation": "+",
-            "slot": "mainhand"
-        },
-        {
-            "attribute": "miapi:generic.projectile_speed",
-            "value": " - 0.2",
-            "operation": "+",
-            "slot": "mainhand"
-        },
-        {
             "attribute": "miapi:generic.crit_damage",
             "value": "-0.5",
             "operation": "*",
@@ -47,6 +35,8 @@
             "target_operation": "*"
         }
     ],
+    "projectile_speed": " -30",
+    "projectile_damage": "-50",
     "allowed_material": {
         "allowedMaterials": [
             "miapi:custom/lightning_rod"

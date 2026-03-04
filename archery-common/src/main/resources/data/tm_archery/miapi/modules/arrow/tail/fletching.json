@@ -31,18 +31,15 @@
         ],
         "cost": 0.1111
     },
+    "projectile_speed": "( - [material.density] ) * 25",
+    "projectile_accuracy": " ([material.flexibility]-7) * - 35",
     "attributes": [
         {
-            "attribute": "miapi:generic.projectile_speed",
-            "value": "( - [material.density] ) / 1",
-            "operation": "+",
-            "slot": "mainhand"
-        },
-        {
-            "attribute": "miapi:generic.projectile_accuracy",
-            "value": "[material.flexibility]/7 - 1",
-            "operation": "+",
-            "slot": "mainhand"
+            "attribute": "minecraft:generic.gravity",
+            "value": "([material.density]) * 0.35",
+            "operation": "*",
+            "slot": "mainhand",
+            "target_operation": "*"
         }
     ],
     "material_indication": {

@@ -42,7 +42,17 @@
             "slot": "mainhand"
         }
     ],
-    "draw_time": "1.25",
+    "bow_speed": [
+        {
+            "value": "-0.05",
+            "operation": "+"
+        },
+        {
+            "value":  "-0.05",
+            "operation": "**"
+        }
+    ],
+    "bow_accuracy": "-18",
     "slots": {
         "arms": {
             "allowed": [

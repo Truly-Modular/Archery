@@ -55,14 +55,7 @@
         "hardness": 1,
         "durability": 1
     },
-    "attributes": [
-        {
-            "attribute": "miapi:generic.projectile_speed",
-            "value": "( [material.hardness] * 2 + [material.flexibility] ) / 9 - 1",
-            "operation": "+",
-            "slot": "mainhand"
-        }
-    ],
+    "bow_speed": "([material.hardness] - 3) * 4",
     "draw_time": "0.8 + [material.hardness]/15",
     "durability": "[material.durability]* 0.5",
     "allowed_material": {

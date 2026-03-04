@@ -23,21 +23,9 @@
     "allowed_in_slots": [
         "bow_string"
     ],
-    "attributes": [
-        {
-            "attribute": "miapi:generic.projectile_speed",
-            "value": "([material.hardness]-1)/2",
-            "operation": "+",
-            "slot": "mainhand"
-        },
-        {
-            "attribute": "miapi:generic.projectile_accuracy",
-            "value": "0",
-            "operation": "+",
-            "slot": "mainhand"
-        }
-    ],
-    "draw_time": "-([material.hardness]-1)*3",
+    "bow_speed": "([material.hardness]-1)*25",
+    "bow_accuracy": "0",
+    "draw_time": "-([material.hardness]-1) * 20",
     "durability": "[material.durability]* 0.5",
     "allowed_material": {
         "allowedMaterials": [
@@ -49,6 +37,7 @@
         "default",
         "handheld",
         "bow",
-        "bow_string"
+        "bow_string",
+        "bow_string_default"
     ]
 }

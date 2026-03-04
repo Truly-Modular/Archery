@@ -39,24 +39,23 @@
     },
     "attributes": [
         {
-            "attribute": "miapi:generic.projectile_speed",
-            "value": " (( - [material.density]) / 1.7 + 1) / 10",
-            "operation": "+",
-            "slot": "mainhand"
+            "attribute": "miapi:generic.crit_damage",
+            "value": "([material.tier]) * 0.04",
+            "operation": "*",
+            "slot": "mainhand",
+            "target_operation": "*"
         },
         {
-            "attribute": "miapi:generic.projectile_damage",
-            "value": "[material.hardness]/3 - 1 ",
-            "operation": "+",
-            "slot": "mainhand"
-        },
-        {
-            "attribute": "miapi:generic.projectile_accuracy",
-            "value": "( ( ( [material.flexibility] - [material.density] ) / ( 4.3 ) ) - 1 ) /6",
-            "operation": "+",
-            "slot": "mainhand"
+            "attribute": "minecraft:generic.gravity",
+            "value": "([material.density] - 3) * 0.05",
+            "operation": "*",
+            "slot": "mainhand",
+            "target_operation": "*"
         }
     ],
+
+    "projectile_speed": "([material.density] - 3) * -3 ",
+    "projectile_accuracy": "([material.flexibility]-3)*35",
     "material_indication": {
         "hardness": 2,
         "flexibility": 1,
@@ -226,6 +225,23 @@
                     "z": 1
                 }
             }
+        }
+    },
+    "projectile_transform": {
+        "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "scale": {
+            "x": 0.6,
+            "y": 0.6,
+            "z": 0.6
         }
     },
     "item_id": "miapi:modular_arrow_part",

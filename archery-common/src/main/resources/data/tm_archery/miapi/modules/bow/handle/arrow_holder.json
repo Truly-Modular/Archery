@@ -44,24 +44,14 @@
     ],
     "attributes": [
         {
-            "attribute": "miapi:generic.projectile_speed",
-            "value": "-([material.flexibility])/6",
-            "operation": "+",
-            "slot": "mainhand"
-        },
-        {
-            "attribute": "miapi:generic.projectile_accuracy",
-            "value": "-([material.hardness])/10",
-            "operation": "+",
-            "slot": "mainhand"
-        },
-        {
             "attribute": "miapi:generic.player_item_use_speed",
             "value": "([material.hardness]+1.0) / 15 +0.1",
             "operation": "+",
             "slot": "mainhand"
         }
     ],
+    "bow_speed": "-([material.flexibility])*5",
+    "bow_accuracy": "-([material.hardness])*3",
     "repair_priority": 0,
     "allowed_in_slots": [
         "bow"

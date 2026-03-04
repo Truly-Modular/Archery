@@ -50,18 +50,14 @@
         }
     },
     "better_combat_config": "bettercombat:bow_two_handed_heavy",
-    "attributes": [
+    "bow_speed": [
         {
-            "attribute": "miapi:generic.projectile_speed",
-            "value": "( [material.hardness] * 3 + [material.flexibility] * 2 ) / 5",
-            "operation": "+",
-            "slot": "mainhand"
+            "value": "([material.hardness] - 3) * 5",
+            "operation": "+"
         },
         {
-            "attribute": "miapi:generic.projectile_speed",
             "value": "0.5",
-            "operation": "**",
-            "slot": "mainhand"
+            "operation": "**"
         }
     ],
     "material_indication": {
@@ -71,11 +67,11 @@
     },
     "draw_time": [
         {
-            "value": "0.75",
+            "value": "0.6",
             "operation": "**"
         },
         {
-            "value": "1.25 + [material.hardness]/2",
+            "value": "1.0 + [material.hardness]/15",
             "operation": "+"
         }
     ],

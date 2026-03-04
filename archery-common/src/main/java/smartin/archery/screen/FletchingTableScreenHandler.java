@@ -155,6 +155,22 @@ public class FletchingTableScreenHandler extends AbstractContainerMenu {
                 .add("shaft", tailModule.id(), 3, container);
     }
 
+    @Override
+    public void removed(Player player) {
+        super.removed(player);
+
+        for (int i = 0; i < 4; i++) {
+            ItemStack stack = this.container.getItem(i);
+            if (!stack.isEmpty()) {
+                if (!player.getInventory().add(stack)) {
+                    player.drop(stack, false);
+                }
+                this.container.setItem(i, ItemStack.EMPTY);
+            }
+        }
+    }
+
+
     protected void preview() {
         CraftActionPipelineArch pipeline = buildPipeline();
 

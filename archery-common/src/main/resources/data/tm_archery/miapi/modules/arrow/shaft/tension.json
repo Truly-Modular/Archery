@@ -1,0 +1,26 @@
+{
+    "parent": "tm_archery:arrow/shaft/normal",
+    "data": {
+        "replace": {
+            "attributes": [
+                {
+                    "attribute": "miapi:generic.crit_damage",
+                    "value": "([material.tier]) * 0.06",
+                    "operation": "*",
+                    "slot": "mainhand",
+                    "target_operation": "*"
+                },
+                {
+                    "attribute": "minecraft:generic.gravity",
+                    "value": "([material.density] - 3) * 0.05",
+                    "operation": "*",
+                    "slot": "mainhand",
+                    "target_operation": "*"
+                }
+            ],
+
+            "projectile_speed": "([material.density] - 3) * - 2",
+            "projectile_accuracy": "([material.flexibility]-4) * 20 - 30"
+        }
+    }
+}
