@@ -23,9 +23,9 @@
     "allowed_in_slots": [
         "bow_string"
     ],
-    "bow_speed": "([material.flexibility]-5.8) * 15",
+    "bow_speed": "([material.flexibility]-6.2) * 5",
     "bow_accuracy": "-50",
-    "draw_time": "-([material.hardness]-4) * 5",
+    "draw_time": "-([material.hardness]-4) * 0.1",
     "durability": "[material.flexibility]* 0.5",
     "allowed_material": {
         "allowedMaterials": [
