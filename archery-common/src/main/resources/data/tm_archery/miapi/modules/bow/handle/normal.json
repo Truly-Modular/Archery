@@ -72,7 +72,7 @@
             }
         }
     },
-    "bow_speed": "([material.flexibility]-3.0)*15",
+    "bow_speed": "([material.hardness]-3.0)*4",
     "bow_accuracy": "([material.hardness]-3.0)*10",
     "model_transform": {
         "fixed": {

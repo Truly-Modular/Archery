@@ -50,8 +50,8 @@
             "slot": "mainhand"
         }
     ],
-    "bow_speed": "-([material.flexibility])*5",
-    "bow_accuracy": "-([material.hardness])*3",
+    "bow_speed": "([material.hardness]-3.0)*3",
+    "bow_accuracy": "([material.hardness]-3.0)*8-50",
     "repair_priority": 0,
     "allowed_in_slots": [
         "bow"
