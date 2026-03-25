@@ -7,14 +7,14 @@
                     "attribute": "miapi:generic.crit_damage",
                     "value": "([material.tier]) * 0.03",
                     "operation": "*",
-                    "slot": "mainhand",
+                    "slot": "projectile",
                     "target_operation": "*"
                 },
                 {
                     "attribute": "minecraft:generic.gravity",
                     "value": "([material.density] - 3) * 0.08",
                     "operation": "*",
-                    "slot": "mainhand",
+                    "slot": "projectile",
                     "target_operation": "*"
                 }
             ],

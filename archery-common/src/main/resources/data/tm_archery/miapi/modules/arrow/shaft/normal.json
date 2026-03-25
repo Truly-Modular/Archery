@@ -40,16 +40,16 @@
     "attributes": [
         {
             "attribute": "miapi:generic.crit_damage",
-            "value": "([material.tier]) * 0.04",
+            "value": "([material.tier] - 1) * 0.04",
             "operation": "*",
-            "slot": "mainhand",
+            "slot": "projectile",
             "target_operation": "*"
         },
         {
             "attribute": "minecraft:generic.gravity",
             "value": "([material.density] - 3) * 0.05",
             "operation": "*",
-            "slot": "mainhand",
+            "slot": "projectile",
             "target_operation": "*"
         }
     ],
